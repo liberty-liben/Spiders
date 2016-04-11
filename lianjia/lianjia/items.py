@@ -31,3 +31,9 @@ class LianjiaItem(scrapy.Item):
     house_url = scrapy.Field()  # 该房源的url
     zhuangtai = scrapy.Field()  # 房源状态,是否成交
     kanfangshu = scrapy.Field() # 客户看房数
+
+class XiaoQuItem(scrapy.Item):
+    xiaoqu = scrapy.Field()             #小区名称
+    xiaoqu_url = scrapy.Field()         #url
+    xiaoqu_longitude = scrapy.Field()   #经度
+    xiaoqu_latitude  = scrapy.Field()   #纬度

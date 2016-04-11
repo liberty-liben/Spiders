@@ -7,7 +7,7 @@ import time
 from scrapy.spiders import Spider
 from scrapy.selector import Selector
 from lianjia.items import LianjiaItem
-
+import json
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -27,13 +27,13 @@ class LianjiaSider(Spider):
         #"http://bj.lianjia.com/xuequfang/",  #学区房
         #"http://bj.lianjia.com/chengjiao/"   #成交房源
     ]
-
+    #抓取二手房网页的房源列表
     def parse(self, response):
         sel = Selector(response)
         #获取房屋信息列表houst_list
         house_list = sel.xpath('//ul[@id="house-lst"]/li')
         count = 0
-        #获取房屋信息
+        #获取房源列表中的房源url
         for house in house_list:
             count+=1
             #house_id = house.xpath('.//@data-id').extract().encode('utf-8')
@@ -42,7 +42,7 @@ class LianjiaSider(Spider):
             #print house_url
             if count > 6:
                 break
-
+        '''
         #获取下一页的信息
         #获取page-box节点,并拼装下一页的url
         page_box = sel.xpath('//div[@class="page-box house-lst-page-box"]')
@@ -61,8 +61,8 @@ class LianjiaSider(Spider):
             #print next_page_url
             time.sleep(0.05)
             yield scrapy.Request(next_page_url, callback=self.parse)
-
-    #解析房产信息
+        '''
+    #解析房源信息
     def house_parse(self,response):
         #创建LianjiaItem对象
         item = LianjiaItem()
@@ -72,9 +72,18 @@ class LianjiaSider(Spider):
         #获取房产的标题
         item['title'] = title_line.xpath('.//h1[@class="title-box left"]/text()').extract()[0]
 
+        #//*[@id="commentsCon"]/div[1]/div[1]/p[1]/text()
+        pinglun = sel.xpath('//*[@id="firstData"]').extract()[0]
+        print pinglun
+        #
+        # 解析成中文
+        #b = json.dumps((pinglun)).replace("\\\\","\\")
+
+        #print b.decode('unicode_escape')
+        '''
         #房产的标签信息
         view_labels = sel.xpath('.//div[@class="view-label"]/span')
-        print len(view_labels)
+        #print len(view_labels)
         for label in view_labels:
             label_class = label.xpath('.//@class').extract()[0]
             #print "label",label_class
@@ -99,7 +108,10 @@ class LianjiaSider(Spider):
         #获取户型
         item['huxing']=house_info.xpath('.//dl[5]/dd/text()').extract()[0]
         #获取朝向
-        item['chaoxiang']=house_info.xpath('.//dl[6]/dd/text()').extract()[0]
+        chaoxiang=house_info.xpath('.//dl[6]/dd/text()').extract()[0]
+        #item['chaoxiang'] = chaoxiang.split()
+        cx_list = chaoxiang.split()
+        item['chaoxiang'] = cx_list
         #获取楼层
         item['louceng']=house_info.xpath('.//dl[7]/dd/text()').extract()[0]
         #获取小区
@@ -113,6 +125,7 @@ class LianjiaSider(Spider):
         #获取客户看房数
         item['kanfangshu']=sel.xpath('//div[@class="house-del"]/ul/li[3]/div/span[2]/text()').extract()[0]
         #获取房源编号:
-        item['house_id']=sel.xpath('//div[@class="iinfo right"]/p[1]/span[2]/text()').extract()
+        item['house_id']=sel.xpath('//div[@class="iinfo right"]/p[1]/span[2]/text()').extract()[0]
         yield item
+        '''
         #print(title,tag_man,tag_ditie,tag_xuequ,tag_xg)

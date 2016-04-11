@@ -28,13 +28,18 @@ class LianjiaPipeline(object):
         self.db_name = 'lianjia'
         self.collection_name = 'house'
 
-    @classmethod
-    def from_crawler(cls,crawler):
-        return (
+    def open_spider(self,spider):
+        self.clent = MongoClient(self.db_address,self.db_port)
+        self.db = self.clent[self.db_name]
 
-        )
+    def close_spider(self,spider):
+        self.clent.close()
+
     def process_item(self, item, spider):
-        line = json.dumps(dict(item))+'\n'
+        data = dict(item)
+        #line = json.dumps(data)+'\n'
         #因为抓取的数据是unicode编码,所以要进行解码decode('unicode_escape')
-        self.file.write(line.decode('unicode_escape'))
+        #self.file.write(line.decode('unicode_escape'))
+        self.db[self.collection_name].insert(data)
+
         return item
