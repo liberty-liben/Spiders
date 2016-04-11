@@ -7,10 +7,10 @@
 
 import scrapy
 
-
 class LianjiaItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    title = scrapy.Field()      # 房源信息标题
     house_id = scrapy.Field()   # 房源编号
     shoujia = scrapy.Field()    # 售价
     mianji = scrapy.Field()     # 房屋面积
@@ -28,3 +28,6 @@ class LianjiaItem(scrapy.Item):
     tag_ditie = scrapy.Field()  # 近地铁
     tag_xuequ = scrapy.Field()  # 学区房
     tag_xg = scrapy.Field()     # 不限购
+    house_url = scrapy.Field()  # 该房源的url
+    zhuangtai = scrapy.Field()  # 房源状态,是否成交
+    kanfangshu = scrapy.Field() # 客户看房数

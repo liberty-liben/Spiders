@@ -14,6 +14,9 @@ BOT_NAME = 'lianjia'
 SPIDER_MODULES = ['lianjia.spiders']
 NEWSPIDER_MODULE = 'lianjia.spiders'
 
+ITEM_PIPELINES = {
+    'lianjia.pipelines.LianjiaPipeline':300
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'lianjia (+http://www.yourdomain.com)'
