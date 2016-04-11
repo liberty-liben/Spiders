@@ -1,0 +1,615 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Cache-Control" content="no-transform" /><meta http-equiv="Cache-Control" content="no-siteapp" /><meta name="format-detection" content="telephone=no" /><script>
+ljConf = {
+    city_id: '110000',
+    city_abbr: 'bj',
+    city_name: '北京',
+    channel: 'xuequfang',
+    page: 'xuequfang_search',
+    pageConfig: {"ajaxroot":"http:\/\/ajax.api.lianjia.com\/","leanCloudAppid":"4e1dh2g3tn08i6swaqtperykbrdas2r8xebmusjeucrptsfd","leanCloudAppkey":"jcd4alcajl0cp4w7vj6gd8zuib7chk5653dy4biffqgynn4n"}
+};
+</script><title>北京学区房_北京学区房推荐-北京链家网</title>
+<meta name="description" content="北京链家网发布最新北京学区房信息，提供最全面的北京优质重点学校周边学区房房源，向用户展示北京优质学校周边房源以及学校对口相关教育信息，及时发布北京学区划分以及重点学校招生简章等信息。" />
+<meta name="keywords" content="北京学区房,北京学校周边房源,北京学区划分,北京重点学校周边房源推荐,北京学校对口小区房源信息" />
+<link href="/favicon.ico" type="image/x-icon" rel=icon><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="http://static2.ljcdn.com/pc/asset/common.css?_v=20160302224917">
+<link rel="stylesheet" href="http://static2.ljcdn.com/pc/asset/list.css?_v=20160302224917">
+<link rel="stylesheet" href="http://static2.ljcdn.com/pc/asset/list/css/schoolhostlist.css?_v=20160302224917">
+<!--[if lt IE 9]><script type="text/javascript" src="http://static2.ljcdn.com/dep/common-require/html5.js?_v=20160302224917"></script><![endif]-->
+<script>
+function RESIZEIMG(b,k,l,m){var c=b.parentNode;var d=parseInt(c.offsetWidth)||k;var e=parseInt(c.offsetHeight)||l;var f=d/e;var g=b.naturalWidth||b.width;var h=b.naturalHeight||b.height;var i=g/h;var j="width";if(f<i){j="height";try{b.style["left"]="-"+parseInt(Math.abs((d-(g*e/h))/2))+"px"}catch(e){}}else if(m){try{b.style["top"]="-"+parseInt(Math.abs((e-(h*d/g))/2))+"px"}catch(e){}};b.style[j]="100%";};
+</script>
+<script>
+var _czc = _czc || [];
+_czc.push(["_setAccount", "1254525948"]);
+</script>
+
+<script type="text/javascript">
+var _smq = _smq || [];
+_smq.push(['_setAccount', '41331c2', new Date()]);
+_smq.push(['_setDomainName', 'lianjia.com']);
+_smq.push(['pageview']);
+(function() {
+var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+})();
+</script>
+</head><body><script>
+__STAT_LJ_CONF = {
+    /*url: 'http://ajax.lianjia.com/statistic/index',*/
+    url: 'http://dig.lianjia.com/rla.gif',
+    params: {
+        pid: '101',
+        type: 'click',
+        subtype: '',
+        tn: '',
+        city_id: '110000',
+        city_abbr: 'bj',
+        channel: 'xuequfang',
+        page: 'xuequfang_search',
+        path: '',
+        mod: ''
+    }
+};
+
+
+
+var UT = {
+    send: function(data, el, config) {
+
+        var utConf = __STAT_LJ_CONF;
+        var params = config || utConf.params,
+            timeStamp = data.r = +new Date(),
+            win = window,
+            enc = encodeURIComponent,
+            img = win["UT" + timeStamp] = new Image(),
+            j, h = [];
+
+        if (params) {
+            for (var d in params) {
+                if(params[d] !== j && data[d] === j) {
+                    data[d] = params[d];
+                }
+            }
+        }
+
+        if(el) {
+            this.checkClick(el, data);
+        }
+        
+        for (j in data) {
+            h.push(j + "=" + enc(data[j]||''));
+        }
+
+        img.onload = img.onerror = function () {
+            win["UT" + timeStamp] = null;
+        };
+
+        img.src = utConf.url + "?" + h.join("&");
+        img = h = null;
+    },
+    checkClick: function(el, data) {
+
+        var TAG_LINK = 'A';
+        var href = '';
+        var elParent = null;
+
+        href = (el.tagName.toUpperCase() === TAG_LINK ? el.getAttribute("href", 2) : '');
+        if(!href && (elParent = el.parentNode) && elParent.nodeType === 1) {
+            href = (elParent.tagName.toUpperCase() === TAG_LINK ? elParent.getAttribute("href", 2) : '');
+        }
+
+        if(href) {
+            data.url = href;
+            data.subtype || (data.subtype = 'link');
+        } else {
+            data.subtype || (data.subtype = 'button');
+            data.url = data.url
+                  || el.getAttribute("data-log_url")
+                  || (elParent=el.parentNode||el).getAttribute("data-log_url")
+                  || (
+                        (elParent=elParent.parentNode||elParent)
+                     && (elParent.nodeType === 1)
+                     && elParent.getAttribute("data-log_url")
+                     )
+                  || "";
+        }
+
+        this.attr(el, data);
+            
+    },
+    path: function() {
+        
+    },
+    attr: function(el, data) {
+        var modId = el.getAttribute("log-mod");
+        var blAttr = el.getAttribute("data-bl");
+        var elAttr = el.getAttribute("data-el");
+        var InAttr = el.getAttribute("data-log_index");
+        var valAttr = el.getAttribute("data-log_value");
+
+        data.bl = data.bl || blAttr || '';
+        data.el = data.el || elAttr || '';
+        data.index = data.index || InAttr || '';
+        data.value = data.value || valAttr || '';
+
+        if (!modId) { 
+            if (el.parentNode && el.parentNode.nodeType === 1 && el.parentNode.tagName.toUpperCase() !== 'BODY') {
+                this.attr(el.parentNode, data);
+            }
+        } else {
+            data.mod = modId;
+        }
+    },
+};
+
+;;(function() {
+    var _start_time = +new Date;
+    var isW3c = !!document.addEventListener;
+
+    document.body[isW3c ? 'addEventListener' : 'attachEvent'](
+        (isW3c ? '': 'on') + 'mousedown', 
+        function(e) {
+            var el = (e || window.event);
+            el = el.target || el.srcElement;
+
+            UT.send({type: 'click'}, el);
+        }, 
+        false);
+
+    UT.send({
+        type: 'load'
+    });
+
+    window[isW3c ? 'addEventListener' : 'attachEvent'](
+        (isW3c ? '': 'on') + 'beforeunload',
+        function(e) {
+            var _end_time = +new Date;
+            UT.send({type: 'show', subtype: 'stay', time: (_end_time-_start_time)/1000});
+        },
+        false);
+})();
+
+
+
+
+
+</script>
+<header class="lianjia-header "><div class="nav-wrap"><div class="wrapper "><div class="fl"><a class="logo" href="http://www.lianjia.com/"  title="链家房产网"><!-- <img src="http://static2.ljcdn.com/pc/asset/img/new-version/logo.png?_v=20160302224917"> --></a></div><div class="fr nav "><div class="fl"><!-- <ul class="nav-lst">
+    <li><a class="home-a selected first" href="http://bj.lianjia.com/ershoufang/" ><span>二手房</span></a></li>
+    <li><a class="home-a  " href="http://bj.lianjia.com/xinfang/" ><span>新房</span></a></li>
+    <li><a class="home-a  " href="http://bj.lianjia.com/zufang/" ><span>租房</span></a></li>
+    <li><a class="home-a  " href="http://us.lianjia.com/" ><span>海外</span></a></li>
+    <li><a class="home-a  " href="http://bj.lianjia.com/xiaoqu/" ><span>小区</span></a></li>
+    <li><a class="home-a  " href="http://bj.lianjia.com/jingjiren/" ><span>经纪人</span></a></li>
+    <li><a  rel="nofollow" class="home-a  " href="http://bj.lianjia.com/wenda/" ><span>指南</span></a></li>
+    <li><a  rel="nofollow" class="home-a  " href="http://bj.lianjia.com/fangjia/" ><span>房价</span></a></li>
+    <li><a  rel="nofollow" class="home-a  " href="https://licai.lianjia.com/" target="_blank"><span>理财</span></a></li>
+    <li><a  rel="nofollow" class="home-a  " href="http://www.lianjia.com/client/" target="_blank"><span>掌上链家</span></a></li>
+    <li><a  rel="nofollow" class="home-a  " href="http://bj.lianjia.com/yezhu/" target="_blank"><span>卖房</span></a></li>
+</ul> -->
+		
+<ul>
+   <li class="index-page-link hide"><a href="http://www.lianjia.com/">首页</a></li>
+		    	        <li class="hover">
+	            <a  class="on" href="http://bj.lianjia.com/ershoufang/" >
+	            二手房
+	            </a>
+	            <div class="nav-list">
+	                <dd>
+	                    <i></i>
+	                                                                                <dl>
+                                    <a href="http://bj.lianjia.com/ershoufang/" >全部</a>
+                                </dl>
+                                                                                                                <dl>
+                                    <a href="http://bj.lianjia.com/ditiefang/" >地铁房</a>
+                                </dl>
+                                                                                                                <dl>
+                                    <a href="http://bj.lianjia.com/xuequfang/" >优质学区</a>
+                                </dl>
+                                                                                                                <dl>
+                                    <a href="http://bj.lianjia.com/chengjiao/" >成交房源</a>
+                                </dl>
+                                                    	                </dd>
+	            </div>
+	        </li>
+	    		    	        <li>
+	            <a  class="" href="http://bj.lianjia.com/xinfang/" >
+	            新房
+	            </a>
+	        </li>
+	    		    	        <li>
+	            <a  class="" href="http://bj.lianjia.com/zufang/" >
+	            租房
+	            </a>
+	        </li>
+	    		    	        <li>
+	            <a  class="" href="http://us.lianjia.com/" >
+	            海外
+	            </a>
+	        </li>
+	    		    	        <li>
+	            <a  class="" href="http://bj.lianjia.com/xiaoqu/" >
+	            小区
+	            </a>
+	        </li>
+	    		    	        <li>
+	            <a  class="" href="http://bj.lianjia.com/jingjiren/" >
+	            经纪人
+	            </a>
+	        </li>
+	    		    	        <li class="hover">
+	            <a  rel="nofollow"  class="" href="http://bj.lianjia.com/wenda/" >
+	            指南
+	            </a>
+	            <div class="nav-list">
+	                <dd>
+	                    <i></i>
+	                                                                                <dl>
+                                    <a href="http://bj.lianjia.com/wenda/" >问答</a>
+                                </dl>
+                                                                                                                <dl>
+                                    <a href="http://bj.lianjia.com/baike/" >百科</a>
+                                </dl>
+                                                    	                </dd>
+	            </div>
+	        </li>
+	    		    	        <li>
+	            <a  rel="nofollow"  class="" href="http://bj.lianjia.com/fangjia/" >
+	            房价
+	            </a>
+	        </li>
+	    		    	        <li>
+	            <a  rel="nofollow"  class="" href="https://licai.lianjia.com/" target="_blank">
+	            理财
+	            </a>
+	        </li>
+	    		    	        <li class="hover">
+	            <a  rel="nofollow"  class="" href="http://www.lianjia.com/client/" target="_blank">
+	            掌上链家
+	            </a>
+	            <div class="nav-list">
+	                <dd>
+	                    <i></i>
+	                                                                                <img src="http://static2.ljcdn.com/pc/asset/img/home/qcode-nav@2x.png?_v=20160302224917">
+                                                    	                </dd>
+	            </div>
+	        </li>
+	    		    	        <li>
+	            <a  rel="nofollow"  class="" href="http://bj.lianjia.com/yezhu/" target="_blank">
+	            卖房
+	            </a>
+	        </li>
+	    	</ul>
+			
+</div><div class="fr login"><div class="ti-hover"><div class="login-panel typeUserInfo"><script type="text/template" class="template">
+      <%if(data && data.username){%>
+        <%if(data.isAgent){%>
+         <a href="<%=$.env.fixedUrl('http://agent.lianjia.com/')%>"><span><%=data.username%></span></a>
+        <%}else{%>
+          <a href="<%=$.env.fixedUrl('http://user.lianjia.com/')%>" rel="nofollow"><span><%=data.username%></span></a>
+         <%}%>
+         <%if(data.isAgent){%>
+           <span class="welcome"><a class="reg" href="<%=data.logoutUrl%>">退出</a></span>
+         <%}else{%>
+           <span class="welcome"><a class="reg" href="<%=data.logoutUrl%>">退出</a></span>
+          <%}%>
+      <%}else{%>
+        <span class="welcome"><a href="<%=data.registerUrl%>"><span class="log">注册</span></a>|<a class="btn-login bounceIn actLoginBtn" href="<%=data.loginUrl%>"><span class="reg">登录</span></a></span>
+      <%}%>
+    </script><div class="typeShowUser"><span class="welcome"><a href="http://passport.lianjia.com/register/resources/lianjia/register.html?service=http%3A%2F%2Fbj.lianjia.com%2Fxuequfang%2F"  rel="nofollow" ><span class="log">注册</span></a>|<a href="https://passport.lianjia.com/cas/login?service=http%3A%2F%2Fbj.lianjia.com%2Fxuequfang%2F" class="btn-login bounceIn actLoginBtn"><span class="reg">登录</span></a></span></div></div><div class="user-news" id="userNews"><script type="text/template" id="News">
+        <%if(data && data.unread_num > 0){%>
+          <i><%=data.unread_num%></i>
+        <%}%>
+        <%var group = data.group_by_type%>
+        <%var isAgent = data.is_agent%>
+        <%if(group && data.unread_num > 0){%>
+          <ul>
+            <li class="s-li"><span></span></li>
+            <%if(group.community_new_house_source.unread > 0){%>
+              <li>
+                <a href="http://user.lianjia.com/?filter=3">
+                  你关注的小区有<i><%=group.community_new_house_source.unread%></i>条新上
+                </a>
+              </li>
+            <%}%>
+            <%if(group.deal.unread > 0){%>
+              <li>
+                <a href="http://user.lianjia.com/?filter=1">
+                  你关注的房源有<i><%=group.deal.unread%></i>条成交
+                </a>
+              </li>
+            <%}%>
+            <%if(group.price_changed.unread > 0){%>
+              <li>
+                <a href="http://user.lianjia.com/?filter=2">
+                  你关注的房源有<i><%=group.price_changed.unread%></i>条变价
+                </a>
+              </li>
+            <%}%>
+            <%if(group["search:new"].unread > 0){%>
+              <li>
+                <a href="http://user.lianjia.com/?filter=4">
+                  你保存的搜索条件有<i><%=group["search:new"].unread%></i>条变动
+                </a>
+              </li>
+            <%}%>
+            <%if(group.on_answer_insert_concern.unread > 0){%>
+              <li>
+                <a href="http://user.lianjia.com/site/myWenda/?filter=1">
+                  您关注的问题有<i><%=group.on_answer_insert_concern.unread%></i>条回复
+                </a>
+              </li>
+            <%}%>
+            <%if(group.on_answer_insert.unread > 0){%>
+              <li>
+                <a href="http://user.lianjia.com/site/myWenda/">
+                  您提问的问题有<i><%=group.on_answer_insert.unread%></i>条回复
+                </a>
+              </li>
+            <%}%>
+
+            <%if(group.on_extra_answer_pass.unread > 0){%>
+              <li>
+                <%if(isAgent) {%>
+                  <a href="http://agent.lianjia.com/preference/wenda/">
+                    您收到<i><%=group.on_extra_answer_pass.unread%></i>条新追答
+                  </a>
+                <%}else {%>
+                  <a href="http://user.lianjia.com/site/myWenda/">
+                    您收到<i><%=group.on_extra_answer_pass.unread%></i>条新追答
+                  </a>
+                <%}%>
+              </li>
+            <%}%>
+            <%if(group.on_special_question_pass.unread > 0){%>
+              <li>
+                <%if(isAgent) {%>
+                  <a href="http://agent.lianjia.com/preference/wenda/?filter=3">
+                    您收到<i><%=group.on_special_question_pass.unread%></i>条定向提问
+                  </a>
+                <%}else {%>
+                  <a href="http://user.lianjia.com/site/myWenda/?filter=3">
+                    您收到<i><%=group.on_special_question_pass.unread%></i>条定向提问
+                  </a>
+                <%}%>
+              </li>
+            <%}%>
+            <%if(group.on_extra_question_pass.unread > 0){%>
+              <li>
+                <%if(isAgent) {%>
+                  <a href="http://agent.lianjia.com/preference/wenda/?filter=4">
+                    您收到<i><%=group.on_extra_question_pass.unread%></i>条追问
+                  </a>
+                <%}else {%>
+                  <a href="http://user.lianjia.com/site/myWenda/?filter=4">
+                    您收到<i><%=group.on_extra_question_pass.unread%></i>条追问
+                  </a>
+                <%}%>
+              </li>
+            <%}%>
+          </ul>
+        <%}%>
+      </script></div></div>
+</div></div></div></div></header>
+<!-- NAV头部搜索模块 -->
+<div class="searchs"><div class="wrapper"><div class="fl" log-mod="search"><div class="search-txt"><form class="clear" action="/xuequfang/rs" data-action="/xuequfang/rs" method="post"><div class="search-tab"><i class="icon" data-bl="switch"></i><div data-bl="switch" class="check"  formact="/ershoufang/rs" actdata="ershoufang">二手房</div><ul class="tabs" data-bl="switch"><li><label actData="channel=ershoufang" formact="/ershoufang/rs" tra="" tips="请输入区域、商圈或小区名开始找房">二手房</label></li><li><label formact="/xiaoqu/rs" actData="channel=xiaoqu" tra="_blank" tips="请输入小区名开始查找小区">小区</label></li><li><label formact="/loupan/rs" actData="channel=xinfang" tra="_blank" tips="请输入楼盘名称开始找房">新房</label></li><li><label formact="/fangjia/rs" actData="channel=fangjia" tra="_blank" tips="请输入区域、商圈或小区名查询房价">查房价</label></li><li><label formact="/zufang/rs" actData="channel=zufang" tra="_blank" tips="请输入区域、商圈或小区名开始找房">租房</label></li><li><label formact="/jingjiren/rs" actData="channel=jingjiren" tra="_blank" tips="请输入商圈、小区或经纪人的姓名、电话...">经纪人</label></li></ul><div  class="txt-serach"><input class="left txt" name="keyword" autocomplete="off" placeholder="请输入区域、商圈或小区名开始找房" id="keyword-box"><div class="hot-sug" data-bl="sug" data-el="history"><ul id="ershoufang"><li class="hot-name">热门搜索</li><div class="list"><li><a href="http://bj.lianjia.com/ershoufang/c1111027381003/" data-log_index="1" data-log_value="新龙城">新龙城</a></li><li><a href="http://bj.lianjia.com/ershoufang/tiantongyuan/" data-log_index="2" data-log_value="天通苑">天通苑</a></li><li><a href="http://bj.lianjia.com/ershoufang/c1111027375945/" data-log_index="3" data-log_value="北京新天地">北京新天地</a></li><li><a href="http://bj.lianjia.com/ershoufang/c1111027382209/" data-log_index="4" data-log_value="远洋山水">远洋山水</a></li><li><a href="http://bj.lianjia.com/ershoufang/wangjing/" data-log_index="5" data-log_value="望京">望京</a></li><li><a href="http://bj.lianjia.com/ershoufang/rs%E4%B8%AD%E5%85%B3%E6%9D%91%E4%B8%80%E5%B0%8F" data-log_index="6" data-log_value="中关村一小">中关村一小</a></li><li><a href="http://bj.lianjia.com/ditiefang/li46107350s46107204/" data-log_index="7" data-log_value="草房站附近房源">草房站附近房源</a></li><li><a href="http://bj.lianjia.com/ditiefang/li652/" data-log_index="8" data-log_value="13号线地铁房">13号线地铁房</a></li></div><li class="del">清除历史记录</li></ul><ul id="xiaoqu"><li class="hot-name">热门搜索</li><div class="list"><li><a href="http://bj.lianjia.com/xiaoqu/1111027382209/" data-log_index="1" data-log_value="远洋山水">远洋山水</a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027375357/" data-log_index="2" data-log_value="后现代城">后现代城</a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027378998/" data-log_index="3" data-log_value="荣丰2008">荣丰2008</a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027380054/" data-log_index="4" data-log_value="天通西苑三区 ">天通西苑三区 </a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027378713/" data-log_index="5" data-log_value="苹果社区">苹果社区</a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027375158/" data-log_index="6" data-log_value="华贸城">华贸城</a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027380057/" data-log_index="7" data-log_value="天通苑中苑">天通苑中苑</a></li><li><a href="http://bj.lianjia.com/xiaoqu/1111027375945/" data-log_index="8" data-log_value="北京新天地">北京新天地</a></li></div><li class="del">清除历史记录</li></ul><ul id="loupan"><li class="hot-name">热门搜索</li><div class="list"><li><a href="http://bj.lianjia.com/loupan/p_aaaog" data-log_index="1" data-log_value="金泰丽湾">金泰丽湾</a></li><li><a href="http://bj.fang.lianjia.com/loupan/p_gyaapsx/" data-log_index="2" data-log_value="公园6号">公园6号</a></li><li><a href="http://bj.lianjia.com/loupan/p_jzsjaaadk/" data-log_index="3" data-log_value="京洲世家">京洲世家</a></li><li><a href="http://bj.lianjia.com/loupan/p_scpsgjaaahy/" data-log_index="4" data-log_value="首创派尚国际">首创派尚国际</a></li><li><a href="http://bj.lianjia.com/loupan/p_bjcjsmasaaajm/" data-log_index="5" data-log_value="北京城建胜茂傲山">北京城建胜茂傲山</a></li><li><a href="http://bj.lianjia.com/loupan/p_skxysjaaajp/" data-log_index="6" data-log_value="首开熙悦尚郡">首开熙悦尚郡</a></li><li><a href="http://bj.lianjia.com/loupan/p_trfxddaaaly/" data-log_index="7" data-log_value="天润福熙大道">天润福熙大道</a></li><li><a href="http://bj.lianjia.com/loupan/p_hxtaaamn/" data-log_index="8" data-log_value="红玺台">红玺台</a></li></div><li class="del">清除历史记录</li></ul><ul id="fangjia"><li class="hot-name">热门搜索</li><div class="list"><li><a href="http://bj.lianjia.com/fangjia/daxing/" data-log_index="1" data-log_value="大兴">大兴</a></li><li><a href="http://bj.lianjia.com/fangjia/changping/" data-log_index="2" data-log_value="昌平">昌平</a></li><li><a href="http://bj.lianjia.com/fangjia/wangjing/" data-log_index="3" data-log_value="望京">望京</a></li><li><a href="http://bj.lianjia.com/fangjia/qinghe/" data-log_index="4" data-log_value="清河">清河</a></li><li><a href="http://bj.lianjia.com/fangjia/c1111027381801/" data-log_index="5" data-log_value="远见名苑">远见名苑</a></li><li><a href="http://bj.lianjia.com/fangjia/c1111027379657/" data-log_index="6" data-log_value="芍药居北里">芍药居北里</a></li><li><a href="http://bj.lianjia.com/fangjia/c1111027375357/" data-log_index="7" data-log_value="后现代城">后现代城</a></li><li><a href="http://bj.lianjia.com/fangjia/c1111027375413/" data-log_index="8" data-log_value="华严北里小区">华严北里小区</a></li></div><li class="del">清除历史记录</li></ul><ul id="zufang"><li class="hot-name">热门搜索</li><div class="list"><li><a href="http://bj.lianjia.com/zufang/rs%E5%8C%97%E4%BA%AC%E5%83%8F%E7%B4%A0" data-log_index="1" data-log_value="北京像素">北京像素</a></li><li><a href="http://bj.lianjia.com/zufang/huilongguan2" data-log_index="2" data-log_value="回龙观">回龙观</a></li><li><a href="http://bj.lianjia.com/zufang/mudanyuan" data-log_index="3" data-log_value="牡丹园">牡丹园</a></li><li><a href="http://bj.lianjia.com/zufang/qinghe11/" data-log_index="4" data-log_value="清河">清河</a></li><li><a href="http://bj.lianjia.com/ditiezufang/li649s20598/" data-log_index="5" data-log_value="天通苑">天通苑</a></li><li><a href="http://bj.lianjia.com/ditiezufang/li46107350s46107139/" data-log_index="6" data-log_value="青年路">青年路</a></li></div><li class="del">清除历史记录</li></ul><ul style="border:0;"></ul></div><div id="suggest-cont" class="suggest-wrap" data-bl="sug" data-el="sug"></div></div><div class="savesearch" city-id="110000"></div></div><button type="submit" data-bl="search" data-el="search" class="act-search btn home-ico ico-search" target="_blank" daty-id="110000">搜索</button></form></div></div><div class="wrap-video-all" id="wrap-video-all"><img src="http://static2.ljcdn.com/pc/asset/img/video-entrance/video-btn-all.png?_v=20160302224917" alt="开启移动找房之旅">开启移动找房之旅!</div><div class="fr last"><div class="ditu fr"><a href="/ditu/" target="_blank"><i></i>地图找房</a></div></div></div></div><!-- 视频入口浮层 --><div class="video-box" id="video-box"><div class="video-bg"></div><div class="video-embed"><div class="video-title">掌上链家·开启移动找房之旅!<span class="video-app-download"><a href="http://www.lianjia.com/client/" target="_blank"><img src="http://static2.ljcdn.com/pc/asset/img/video-entrance/video-logo-app.png?_v=20160302224917" class="video-logo-app"><span>马上去下载</span></a></span></div><img id="video-close" class="video-close" src="http://static2.ljcdn.com/pc/asset/img/video-entrance/video-close.png?_v=20160302224917" alt="关闭" /><embed src="http://static.video.qq.com/TPout.swf?vid=k0172rnl5o4&auto=0" allowFullScreen="true" quality="high" width="650" height="455" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" flashvars="autoplay=1&amp;"></embed></div></div>
+
+
+<script  type="text/javascript">
+var oWrap_video_all = document.getElementById('wrap-video-all');
+oWrap_video_all.onclick = function(){
+    var oVideo_box = document.getElementById('video-box');
+    var oVideo_close = document.getElementById('video-close');
+    oVideo_box.style.display = "block";
+    oVideo_close.onclick = function(){
+          oVideo_box.style.display = "none";
+    }
+}
+
+</script>
+<div class="savelist">
+    <script type="text/template" id="savesearch">
+    <%if(data && data.data){%>
+        <span class="s-show"><%=data.count%>条已保存搜索<label></label></span>
+        <div class="cunn">
+            <ul>
+                <li class="title">已保存搜索</li>
+                <li class="list">
+                    <% for(var i = 0; i < data.data.length;i++){ var dat = data.data;%>
+                        <div class="li">
+                            <a href="<%=dat[i].url%>" target="_blank">
+                                <%if (dat[i].query){%>
+                                    <span class="fl se"><%=dat[i].query%></span>
+                                <%}%>
+                                <span class="fl ti">
+                                    <%for(var j = 0; j<dat[i].title.length;j++){%>
+                                       <%=dat[i].title[j]%>
+                                    <%}%>
+                                </span>
+                            </a>
+                        </div>    
+                    <%}%>
+                </li>  
+                 <%if (data.data.length > 3) {%>
+                    <li class="more">查看全部已保存搜索</li>
+                <%}%>
+            </ul>
+        </div>
+    <%}%>    
+    </script>
+</div>
+
+
+
+<!-- 面包屑模块 -->
+<div class="intro clear" mod-id="lj-common-bread"><div class="container"><div class="fl l-txt"><i class="icon"></i>&nbsp;<a href="/">北京链家网</a><span class="stp">&nbsp;&gt;&nbsp;</span><a href="/xuequfang/">北京学区房</a></div><div class="fr r-txt"><!--  --></div></div></div><div class="wrapper">
+<div class="filter-box"><div class="hd clear"><ul class="tab-lst"><li><a href="/ershoufang/"><span>全部二手房</span></a></li><li><a href="/ditiefang/"><span>地铁房</span></a></li><li class="on"><a href="/xuequfang/"><span>优质学区</span></a></li><li><a href="/chengjiao/"><span>成交房源</span></a></li></ul><div class="info"><span class="num">真实房源，假一赔百，不封顶！</span></div></div><div><div class="bd" id="filter-options"><dl class="dl-lst clear" mod-id="filter-box-d"><dt>区域：</dt><dd data-index="0"><div class="option-list"><a href="/xuequfang/" class="on">不限</a><a href="/xuequfang/dongcheng/">东城</a><a href="/xuequfang/xicheng/">西城</a><a href="/xuequfang/chaoyang/">朝阳</a><a href="/xuequfang/haidian/">海淀</a><a href="/xuequfang/fengtai/">丰台</a><a href="/xuequfang/shijingshan/">石景山</a><a href="/xuequfang/tongzhou/">通州</a><a href="/xuequfang/changping/">昌平</a><a href="/xuequfang/daxing/">大兴</a><a href="/xuequfang/yizhuangkaifaqu/">亦庄开发区</a><a href="/xuequfang/shunyi/">顺义</a><a href="/xuequfang/fangshan/">房山</a><a href="/xuequfang/mentougou/">门头沟</a><a href="/xuequfang/pinggu/">平谷</a><a href="/xuequfang/huairou/">怀柔</a><a href="/xuequfang/miyun/">密云</a><a href="/xuequfang/yanqing/">延庆</a><a href="/xuequfang/yanjiao/">燕郊</a></div></dd></dl></div><div class="filter-bar01"><div id="sort-panel" class="sort-panel"><div class="left"><div class="fs14"><span class="num-school">共有<span>185</span>所小学</span></div></div></div></div></div></div><div class="main-box clear"><div class="con-box"><div class="list-wrap"><div class="school-list"><ul class="house-lst"><li><a href="/xuequfang/47715631.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/43dfb973-6cec-484d-a733-dd88177fc566.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/43dfb973-6cec-484d-a733-dd88177fc566.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/43dfb973-6cec-484d-a733-dd88177fc566.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/47715631.html" target="_blank">北京市朝阳外国语学校分校</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：朝阳外国语分校</p><p class="dizhi">地址：北京市朝阳区来广营地区北苑清河营中街（中国铁建国际城小区北侧）</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>192</span>万起</span><p>25563元/m² - 80357元/m²</p></div><div class="fr num"><p><a href="/xuequfang/47715631.html#list"  target="_blank"><span>8</span>个划片小区</a></p><p><a href="/ershoufang/sch47715631/"  target="_blank"> <span>293套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市朝阳外国语学校分校</div></div></li><li><a href="/xuequfang/4000000966.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/41f4c023-8fc2-4434-8efc-dfbfb8675036.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/41f4c023-8fc2-4434-8efc-dfbfb8675036.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/41f4c023-8fc2-4434-8efc-dfbfb8675036.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000966.html" target="_blank">北京市海淀区今典小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：今典小学/明光村小学</p><p class="dizhi">地址：海淀区学院南路红联北村83号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>140</span>万起</span><p>26224元/m² - 85714元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000966.html#list"  target="_blank"><span>42</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000966/"  target="_blank"> <span>275套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京师范大学第三附属中学 / 北方交通大学附属中学明光村分校 / 北方交通大学附属中学</div></div></li><li><a href="/xuequfang/54044485.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/2c36ae29-c16d-49a8-a3cc-e506e6854674.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/2c36ae29-c16d-49a8-a3cc-e506e6854674.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/2c36ae29-c16d-49a8-a3cc-e506e6854674.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/54044485.html" target="_blank">北京市朝阳区芳草地国际学校双花园校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：芳草地国际学校双花园校区</p><p class="dizhi">地址：朝阳区双花园南里2区15号院1号楼</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>30</span>万起</span><p>15000元/m² - 206421元/m²</p></div><div class="fr num"><p><a href="/xuequfang/54044485.html#list"  target="_blank"><span>12</span>个划片小区</a></p><p><a href="/ershoufang/sch54044485/"  target="_blank"> <span>249套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京工业大学附属中学</div></div></li><li><a href="/xuequfang/4000001015.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/0e401835-b112-4dd1-8b2f-83c34fdc39ae.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/0e401835-b112-4dd1-8b2f-83c34fdc39ae.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/0e401835-b112-4dd1-8b2f-83c34fdc39ae.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000001015.html" target="_blank">中国人民大学附属小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：人大附小</p><p class="dizhi">地址：中国北京市海淀区蓝靛厂路18号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>350</span>万起</span><p>45361元/m² - 116667元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000001015.html#list"  target="_blank"><span>20</span>个划片小区</a></p><p><a href="/ershoufang/sch4000001015/"  target="_blank"> <span>236套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市第十九中学 / 北京市海淀区教师进修学院附属实验学校 / 中国人民大学附属中学二分校 / 北京市八一学校 / 北京市中关村中学</div></div></li><li><a href="/xuequfang/53973343.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/95d48cda-4d4b-4ace-baa9-3fb946e32f66.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/95d48cda-4d4b-4ace-baa9-3fb946e32f66.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/95d48cda-4d4b-4ace-baa9-3fb946e32f66.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/53973343.html" target="_blank">中国传媒大学附属小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：传媒附小/定福庄第二小学</p><p class="dizhi">地址：朝阳区福庄南里2号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>98</span>万起</span><p>16129元/m² - 73663元/m²</p></div><div class="fr num"><p><a href="/xuequfang/53973343.html#list"  target="_blank"><span>23</span>个划片小区</a></p><p><a href="/ershoufang/sch53973343/"  target="_blank"> <span>227套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：中国传媒大学附属中学</div></div></li><li><a href="/xuequfang/47715027.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/b48d81ed-240f-4194-9451-e63634b35f61.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/b48d81ed-240f-4194-9451-e63634b35f61.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/b48d81ed-240f-4194-9451-e63634b35f61.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/47715027.html" target="_blank">中国人民大学附属中学朝阳学校小学部</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：人大附中朝阳学校</p><p class="dizhi">地址：北京市朝阳区芍药居北里小区303号楼</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>180</span>万起</span><p>27804元/m² - 80000元/m²</p></div><div class="fr num"><p><a href="/xuequfang/47715027.html#list"  target="_blank"><span>24</span>个划片小区</a></p><p><a href="/ershoufang/sch47715027/"  target="_blank"> <span>225套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：中国人民大学附属中学朝阳学校</div></div></li><li><a href="/xuequfang/47715441.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/43130496-7e9a-4fec-9b5e-0bf53f754bce.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/43130496-7e9a-4fec-9b5e-0bf53f754bce.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/43130496-7e9a-4fec-9b5e-0bf53f754bce.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/47715441.html" target="_blank">北京小学天宁寺分校</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：北小天宁寺分校/天宁寺小学</p><p class="dizhi">地址：北京市西城区天宁寺前街35号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>160</span>万起</span><p>33962元/m² - 110553元/m²</p></div><div class="fr num"><p><a href="/xuequfang/47715441.html#list"  target="_blank"><span>20</span>个划片小区</a></p><p><a href="/ershoufang/sch47715441/"  target="_blank"> <span>210套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：宣武外国语实验学校 / 北京市第十四中学 / 北京第四中学广外校区</div></div></li><li><a href="/xuequfang/47715354.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/9b7975e9-9a7e-4d66-bc66-5bcfb7cfd4f0.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/9b7975e9-9a7e-4d66-bc66-5bcfb7cfd4f0.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/9b7975e9-9a7e-4d66-bc66-5bcfb7cfd4f0.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/47715354.html" target="_blank">北京第二实验小学广外分校</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：实验二小广外分校/广外一小/广安门外第一小学</p><p class="dizhi">地址：北京市西城区广安门外红居南街2号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>230</span>万起</span><p>30317元/m² - 84865元/m²</p></div><div class="fr num"><p><a href="/xuequfang/47715354.html#list"  target="_blank"><span>22</span>个划片小区</a></p><p><a href="/ershoufang/sch47715354/"  target="_blank"> <span>210套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：宣武外国语实验学校 / 北京市第十四中学 / 北京第四中学广外校区</div></div></li><li><a href="/xuequfang/4000000841.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/6713b0f1-bfbe-4b60-8040-0df5803ceb6d.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/6713b0f1-bfbe-4b60-8040-0df5803ceb6d.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/6713b0f1-bfbe-4b60-8040-0df5803ceb6d.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000841.html" target="_blank">北京市朝阳区垂杨柳中心小学金都校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：垂杨柳中心小学金都校区</p><p class="dizhi">地址：北京市朝阳区垂杨柳中里１４号楼北侧</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>160</span>万起</span><p>27393元/m² - 77465元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000841.html#list"  target="_blank"><span>19</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000841/"  target="_blank"> <span>209套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市第十七中学</div></div></li><li><a href="/xuequfang/45714348.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/d5dccdf1-a48c-4647-9ead-7821f4989eba.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/d5dccdf1-a48c-4647-9ead-7821f4989eba.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/d5dccdf1-a48c-4647-9ead-7821f4989eba.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/45714348.html" target="_blank">北京市海淀区中关村第三小学万柳校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：中关村三小万柳校区</p><p class="dizhi">地址：北京市海淀区万柳中路23号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>400</span>万起</span><p>31539元/m² - 211864元/m²</p></div><div class="fr num"><p><a href="/xuequfang/45714348.html#list"  target="_blank"><span>10</span>个划片小区</a></p><p><a href="/ershoufang/sch45714348/"  target="_blank"> <span>208套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市中关村中学 / 北京市八一学校 / 北京一零一中双榆树校区 / 北京市知春里中学</div></div></li><li><a href="/xuequfang/4000001105.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-school/d43902b7-4513-453e-a598-9a09e20c90a9.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-school/d43902b7-4513-453e-a598-9a09e20c90a9.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-school/d43902b7-4513-453e-a598-9a09e20c90a9.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000001105.html" target="_blank">北京市丰台区第五小学科丰校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：丰台五小科丰校区</p><p class="dizhi">地址：北京市丰台区科学城恒富街1号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>120</span>万起</span><p>21923元/m² - 66667元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000001105.html#list"  target="_blank"><span>15</span>个划片小区</a></p><p><a href="/ershoufang/sch4000001105/"  target="_blank"> <span>191套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市丰台第二中学 / 北京市丰台第八中学</div></div></li><li><a href="/xuequfang/54122103.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/29006181-629b-4250-be3e-30eff4f747e3.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/29006181-629b-4250-be3e-30eff4f747e3.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/29006181-629b-4250-be3e-30eff4f747e3.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/54122103.html" target="_blank">清华大学附属小学昌平分校</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：清华附小昌平分校/清华附小昌平校区</p><p class="dizhi">地址：北京市昌平区东小口镇陈家营中路1号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>176</span>万起</span><p>24583元/m² - 71929元/m²</p></div><div class="fr num"><p><a href="/xuequfang/54122103.html#list"  target="_blank"><span>11</span>个划片小区</a></p><p><a href="/ershoufang/sch54122103/"  target="_blank"> <span>191套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市昌平区中滩中学 / 清华大学附属中学</div></div></li><li><a href="/xuequfang/4000001020.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/515db9e0-8690-48bb-9145-1557362d18c2.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/515db9e0-8690-48bb-9145-1557362d18c2.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/515db9e0-8690-48bb-9145-1557362d18c2.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000001020.html" target="_blank">北京市海淀区中关村第一小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：中关村一小/中关村小学</p><p class="dizhi">地址：北京市海淀区中关村南二街5号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>350</span>万起</span><p>31322元/m² - 158809元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000001020.html#list"  target="_blank"><span>14</span>个划片小区</a></p><p><a href="/ershoufang/sch4000001020/"  target="_blank"> <span>191套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市中关村中学 / 北京市八一学校 / 北京一零一中双榆树校区 / 北京市知春里中学</div></div></li><li><a href="/xuequfang/4000000789.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/e0f9455a-7f61-4852-bc6f-9aaa34a01c6c.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/e0f9455a-7f61-4852-bc6f-9aaa34a01c6c.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/e0f9455a-7f61-4852-bc6f-9aaa34a01c6c.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000789.html" target="_blank">朝阳师范学校附属小学太阳宫校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：朝师附小太阳宫校区/朝师附小太阳星城校区/朝阳师范学校附属小学太阳星城校区</p><p class="dizhi">地址：太阳宫中路夏家园</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>200</span>万起</span><p>32413元/m² - 85669元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000789.html#list"  target="_blank"><span>15</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000789/"  target="_blank"> <span>185套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市五路居第一中学 / 北京中医学院附属中学 / 北京化工大学附属中学安北校区 / 北京市和平街第一中学 / 中国人民大学附属中学朝阳学校</div></div></li><li><a href="/xuequfang/4000001002.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/0fe2ecb1-5465-4be0-a908-c9e5037fff30.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/0fe2ecb1-5465-4be0-a908-c9e5037fff30.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/0fe2ecb1-5465-4be0-a908-c9e5037fff30.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000001002.html" target="_blank">北京市海淀区永泰小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：永泰小学</p><p class="dizhi">地址：北京市海淀区清河永泰东里49号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>100</span>万起</span><p>19059元/m² - 68966元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000001002.html#list"  target="_blank"><span>15</span>个划片小区</a></p><p><a href="/ershoufang/sch4000001002/"  target="_blank"> <span>183套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市第二十中学 / 北京市清河中学 / 北京市北外附属外国语学校 / 北京市上地实验学校</div></div></li><li><a href="/xuequfang/4000000931.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/2e47cf05-9596-4851-b9a3-7f3c91006897.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/2e47cf05-9596-4851-b9a3-7f3c91006897.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/2e47cf05-9596-4851-b9a3-7f3c91006897.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000931.html" target="_blank">北京市海淀区翠微小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：翠微小学/翠微学校</p><p class="dizhi">地址：北京市海淀区翠微路22号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>200</span>万起</span><p>33741元/m² - 163541元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000931.html#list"  target="_blank"><span>36</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000931/"  target="_blank"> <span>183套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市第五十七中学 / 北京市玉渊潭中学 / 中国人民大学附属中学翠微学校 / 北京市育英中学 / 北京理工大学附属中学</div></div></li><li><a href="/xuequfang/4000000708.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/adafe763-d6ac-46cd-a1e1-c6322ad26722.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/adafe763-d6ac-46cd-a1e1-c6322ad26722.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/adafe763-d6ac-46cd-a1e1-c6322ad26722.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000708.html" target="_blank">北京市崇文小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：崇文小学</p><p class="dizhi">地址：北京市东城区花市枣苑12号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>240</span>万起</span><p>45514元/m² - 129797元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000708.html#list"  target="_blank"><span>19</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000708/"  target="_blank"> <span>182套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市广渠门中学 / 北京市崇文门中学 / 北京市第九十六中学 / 北京市前门外国语学校 / 北京市汇文中学 / 北京市文汇中学</div></div></li><li><a href="/xuequfang/4000000977.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/d244ec97-4b59-4ead-a488-33f35d7a1bb2.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/d244ec97-4b59-4ead-a488-33f35d7a1bb2.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/d244ec97-4b59-4ead-a488-33f35d7a1bb2.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000977.html" target="_blank">北京市海淀区学院路小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：学院路小学/蓟门里小学</p><p class="dizhi">地址：北京市海淀区蓟门里小区</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>185</span>万起</span><p>39090元/m² - 114901元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000977.html#list"  target="_blank"><span>13</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000977/"  target="_blank"> <span>181套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市中关村中学分校 / 北京航空航天大学附属中学 / 北京市中关村中学分校</div></div></li><li><a href="/xuequfang/4000000807.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/608cae91-9f28-480e-9797-cdae15e22420.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/608cae91-9f28-480e-9797-cdae15e22420.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/608cae91-9f28-480e-9797-cdae15e22420.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000807.html" target="_blank">北京市朝阳区安慧里中心小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：安慧里中心小学</p><p class="dizhi">地址：本部(低年级):朝阳区安慧里四区12号楼，本部(高年级)朝阳区安慧里一区10号楼</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>175</span>万起</span><p>23436元/m² - 70071元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000807.html#list"  target="_blank"><span>16</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000807/"  target="_blank"> <span>178套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市陈经纶中学嘉铭分校 / 北京中医药大学附属中学 / 北京市樱花实验学校 / 北京化工大学附属中学</div></div></li><li><a href="/xuequfang/4000001017.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/aea6b026-5281-401a-a279-3d3db42b8df4.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/aea6b026-5281-401a-a279-3d3db42b8df4.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/aea6b026-5281-401a-a279-3d3db42b8df4.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000001017.html" target="_blank">北京市海淀区万泉小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：万泉小学</p><p class="dizhi">地址：北京市海淀区万泉庄甲一号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>270</span>万起</span><p>43846元/m² - 114286元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000001017.html#list"  target="_blank"><span>15</span>个划片小区</a></p><p><a href="/ershoufang/sch4000001017/"  target="_blank"> <span>174套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京理工大学附属中学 / 北京理工大学附属中学 / 北京市八一学校 / 北京市第十九中学</div></div></li><li><a href="/xuequfang/4000000657.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/7098174d-07d2-424d-bada-4068c16df7c9.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/7098174d-07d2-424d-bada-4068c16df7c9.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/7098174d-07d2-424d-bada-4068c16df7c9.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000657.html" target="_blank">北京市东城区史家实验学校</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：史家实验学校/曙光小学</p><p class="dizhi">地址：铜厂子胡同8号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>250</span>万起</span><p>29998元/m² - 133333元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000657.html#list"  target="_blank"><span>22</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000657/"  target="_blank"> <span>168套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市第二中学分校</div></div></li><li><a href="/xuequfang/54107633.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/0b470021-4248-4e0f-aa3e-3eb460e83617.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/0b470021-4248-4e0f-aa3e-3eb460e83617.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/0b470021-4248-4e0f-aa3e-3eb460e83617.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/54107633.html" target="_blank">北京市陈经纶中学嘉铭分校安慧北里校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：陈经纶中学嘉铭分校西校区/陈经纶嘉铭分校安慧北里校区/安慧北里小学</p><p class="dizhi">地址：朝阳区安慧北里安园9号楼</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>200</span>万起</span><p>27619元/m² - 62500元/m²</p></div><div class="fr num"><p><a href="/xuequfang/54107633.html#list"  target="_blank"><span>11</span>个划片小区</a></p><p><a href="/ershoufang/sch54107633/"  target="_blank"> <span>168套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京陈经纶中学嘉铭分校西校区</div></div></li><li><a href="/xuequfang/54153756.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/f0ecde72-76ad-4810-b2e5-f87217489381.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/f0ecde72-76ad-4810-b2e5-f87217489381.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/f0ecde72-76ad-4810-b2e5-f87217489381.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/54153756.html" target="_blank">北京市朝阳区芳草地国际学校富力分校</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：芳草地学校富力分校/芳草地国际学校富丽分校</p><p class="dizhi">地址：北京市朝阳区大鲁店北路30号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>130</span>万起</span><p>23636元/m² - 46698元/m²</p></div><div class="fr num"><p><a href="/xuequfang/54153756.html#list"  target="_blank"><span>3</span>个划片小区</a></p><p><a href="/ershoufang/sch54153756/"  target="_blank"> <span>167套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京芳草地国际学校富力分校</div></div></li><li><a href="/xuequfang/4000000727.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/f8e49311-92b3-41a9-b0de-e700de0fbe46.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/f8e49311-92b3-41a9-b0de-e700de0fbe46.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/f8e49311-92b3-41a9-b0de-e700de0fbe46.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000727.html" target="_blank">北京市崇文小学新景校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：崇文小学新景校区/新景小学</p><p class="dizhi">地址：崇文区西花市南里西区7号楼</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>240</span>万起</span><p>46211元/m² - 111440元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000727.html#list"  target="_blank"><span>16</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000727/"  target="_blank"> <span>157套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市广渠门中学 / 北京市崇文门中学 / 北京市第九十六中学 / 北京市前门外国语学校 / 北京市汇文中学 / 北京市文汇中学</div></div></li><li><a href="/xuequfang/4000000973.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/b42d95e1-615f-49f0-b93c-79cbc82b1263.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/b42d95e1-615f-49f0-b93c-79cbc82b1263.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/b42d95e1-615f-49f0-b93c-79cbc82b1263.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000973.html" target="_blank">中国农业科学院附属小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：农科院附小/农科院附属小学</p><p class="dizhi">地址：中关村南大街12号中国农业科学院院内</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>48</span>万起</span><p>32130元/m² - 88922元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000973.html#list"  target="_blank"><span>37</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000973/"  target="_blank"> <span>154套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北方交通大学附属中学 / 北方交通大学附属中学第二分校 / 北京师范大学第三附属中学</div></div></li><li><a href="/xuequfang/4000000945.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/b84da18b-db5a-4d0e-ac41-36ba1381ded3.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/b84da18b-db5a-4d0e-ac41-36ba1381ded3.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/b84da18b-db5a-4d0e-ac41-36ba1381ded3.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000945.html" target="_blank">北京市海淀区八里庄小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：八里庄小学</p><p class="dizhi">地址：北京市海淀区八里庄街7号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>233</span>万起</span><p>42587元/m² - 125196元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000945.html#list"  target="_blank"><span>27</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000945/"  target="_blank"> <span>148套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：首都师范大学附属中学 / 北京市海淀区教师进修学校 / 北京市海淀实验中学 / 首都师范大学第二附属中学 / 北京理工大学附属中学</div></div></li><li><a href="/xuequfang/47715410.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/92477406-3f01-474f-98ef-efdd586fceae.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/92477406-3f01-474f-98ef-efdd586fceae.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/92477406-3f01-474f-98ef-efdd586fceae.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/47715410.html" target="_blank">北京市海淀区中关村第二小学百旺校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：中关村二小百旺校区/百旺二小</p><p class="dizhi">地址：北京市海淀区后厂村路66号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>380</span>万起</span><p>41599元/m² - 141640元/m²</p></div><div class="fr num"><p><a href="/xuequfang/47715410.html#list"  target="_blank"><span>6</span>个划片小区</a></p><p><a href="/ershoufang/sch47715410/"  target="_blank"> <span>147套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京市八一学校 / 人大附中西山分校 / 北京市上地实验学校 / 北京市第二十中学 / 北京农业大学附属中学 / 北京一零一中温泉校区</div></div></li><li><a href="/xuequfang/4000000739.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/54d69da3-bed5-493c-ac1f-2cef4b39a13b.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/54d69da3-bed5-493c-ac1f-2cef4b39a13b.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/54d69da3-bed5-493c-ac1f-2cef4b39a13b.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000739.html" target="_blank">北京市西城区红莲小学</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：红莲小学</p><p class="dizhi">地址：广安门外红莲中里14号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>68</span>万起</span><p>19871元/m² - 82414元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000739.html#list"  target="_blank"><span>13</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000739/"  target="_blank"> <span>146套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：宣武外国语实验学校 / 北京市第十四中学 / 北京第四中学广外校区</div></div></li><li><a href="/xuequfang/54142513.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/7e74af22-dd90-4fc6-9de1-c3c7532b39b2.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/7e74af22-dd90-4fc6-9de1-c3c7532b39b2.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/7e74af22-dd90-4fc6-9de1-c3c7532b39b2.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/54142513.html" target="_blank">北京市朝阳区第二实验小学远洋一方校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：朝阳朝阳实验二小远洋一方校区/远洋一方小学</p><p class="dizhi">地址：北京市朝阳区双桥东路（远洋一方小区内）</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>130</span>万起</span><p>24444元/m² - 41667元/m²</p></div><div class="fr num"><p><a href="/xuequfang/54142513.html#list"  target="_blank"><span>10</span>个划片小区</a></p><p><a href="/ershoufang/sch54142513/"  target="_blank"> <span>144套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京第二外国语学院附属中学</div></div></li><li><a href="/xuequfang/4000000946.html" class="link-img" target="_blank"><img src="http://image2.ljcdn.com/hdic-common/d744a409-b05d-435a-b53b-c40c21a5d0cc.jpg.280x210.jpg" data-img="http://image2.ljcdn.com/hdic-common/d744a409-b05d-435a-b53b-c40c21a5d0cc.jpg.280x210.jpg" data-apart-layout="http://image2.ljcdn.com/hdic-common/d744a409-b05d-435a-b53b-c40c21a5d0cc.jpg.280x210.jpg"></a><div class="host-count"><h2><a href="/xuequfang/4000000946.html" target="_blank">北京市海淀区实验小学北洼路校区</a></h2><div class="house-info"><div class="fl"><p class="dizhi">别名：海淀实验小学北洼路校区/北洼路小学</p><p class="dizhi">地址：北京市海淀区车道沟南里36号</p></div><div class="fr"><div class="price fl"><span class="pric-start"><span>178</span>万起</span><p>29276元/m² - 76190元/m²</p></div><div class="fr num"><p><a href="/xuequfang/4000000946.html#list"  target="_blank"><span>18</span>个划片小区</a></p><p><a href="/ershoufang/sch4000000946/"  target="_blank"> <span>144套</span>在售房源</a></p></div></div></div><div class="info-name">对口中学：北京外国语大学附属中学 / 北京市海淀实验中学 / 北京市第十九中学 / 北京理工大学附属中学</div></div></li></ul></div><div class="page-box house-lst-page-box" comp-module='page' page-url="/xuequfang/pg{page}/"page-data='{"totalPage":7,"curPage":1}'></div>
+
+
+</div></div></div>
+</div>
+
+<div class="footer"><div class="wrapper"><div class="f-title"><div class="fl"><ul><li><a href="http://www.lianjia.com/zhuanti/home/" target="_blank">了解链家网</a></li><li><a href="http://bj.lianjia.com/about/aboutlianjia/" rel="nofollow" target="_blank">关于链家</a></li><li><a href="http://bj.lianjia.com/about/contactus/" rel="nofollow" target="_blank">联系我们</a></li><li><a href="http://bj.lianjia.com/about/joinagent/" rel="nofollow" target="_blank">加入我们</a></li><li><a href="http://www.lianjia.com/privacy/" rel="nofollow" target="_blank">隐私声明</a></li><li><a href="http://bj.lianjia.com/sitemap/" target="_blank">网站地图</a></li><li><a href="http://www.lianjia.com/notice/7.html" target="_blank">友情链接</a></li><li><a href="https://www.ehomepay.com.cn/" rel="nofollow" target="_blank">理房通</a></li><li><a href="http://agent.lianjia.com/" rel="nofollow" target="_blank">经纪人登录</a></li></ul></div><div class="fr">官方客服4007001001</div></div><div class="lianjia-link-box"><div class="fl"><div class="tab"><span  class="hover">北京优质学区房</span><span >北京二手房热门搜索</span><span >北京房屋买卖咨询</span><span >北京房价</span><span >合作与友情链接</span></div><div class="link-list"><div><dd><a target="_blank" href="http://bj.lianjia.com/xuequfang/54044485.html">芳草地国际学校双花园校区</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000966.html">海淀区金典小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/47715631.html">朝阳外国语学校</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/45714348.html">中关村第三小学万柳校区</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000841.html">垂柳中心小学金都校区</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000001015.html">人大附属小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/53973343.html">传媒附属小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000708.html">崇文小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/47715027.html">人大附中朝阳学校</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000931.html">海淀区翠微小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000727.html">崇文小学新景校区</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/53626904.html">八一学校小学部</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000001017.html">海淀区万泉小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000789.html">朝阳师大附小太阳宫校区</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000973.html">农业科学院附属小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000000977.html">海淀区学院路小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000001020.html">中关村第一小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000001002.html">海淀区永泰小学</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/54122103.html">清华附小昌平分校</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/47715441.html">北小天宁寺分校</a></dd></div><div><dd><a target="_blank" href="http://bj.lianjia.com/ershoufang/tf1tt2/">北京最新满五唯一二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/sc1tf1/">北京满五唯一学区房</a><a target="_blank" href="http://bj.lianjia.com/ditiefang/sc1/">北京地铁沿线学区房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/l3/">北京三居户型二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/lc1/">北京低楼层二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/tt3/">北京降价二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/xueyuanlu/">学院路二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/zhongguancun/sc1/">中关村学区房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/xicheng/sc1/">西城学区二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/yanjiao/tf1/">燕郊满五唯一二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/haidian/tf1/">海淀满五唯一二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/tongzhou/tf1/">通州满五唯一二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/sc1/">北京学区二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/changping/tf1/">昌平满五唯一二手房</a><a target="_blank" href="http://bj.lianjia.com/ditiefang/tf1/">北京地铁沿线满五唯一</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/x1/">北京不限购二手房</a><a target="_blank" href="http://bj.lianjia.com/chengjiao/">北京二手房交易行情</a><a target="_blank" href="http://bj.lianjia.com/chengjiao/sc1/">北京学区房成交</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/a1/">50平以下小户型二手房源</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/p1/">100万以下低总价二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/su1/">北京地铁沿线二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/f2/">北京朝南二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/yanjiao/f2/">燕郊朝南二手房</a><a target="_blank" href="http://bj.lianjia.com/ershoufang/yanjiao/tf1f2/">燕郊满五唯一朝南二手房</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000001020.shtml/">中关村一小二手房推荐</a><a target="_blank" href="http://bj.lianjia.com/xuequfang/4000001015.shtml">人大附小学区房</a></dd></div><div><dd><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b1001/">2016年北京房价行情</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b1003/">北京购房资质问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b1004/">买房风险防范</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b1005/">二手房买卖相关事项</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b1006/">北京新房购买相关问题解答</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b1007/">海外买房问题解答</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b2001/">交易过户税费计算问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b2002/">认购签约相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b2003/">北京买房资金监管问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b2004/">北京买房过户流程</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b2005/">入住交接相关注意事项</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b3001/">北京房屋估价相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b3002/">北京卖房流程咨询</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b3004/">卖房业主风险相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b4001/">北京学区政策问题解答</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b4002/">北京入学条件相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b4003/">北京学区房选购相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b5001/">北京买房贷款利率相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b5004/">北京住房公积金问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b5005/">北京商业贷款相关问题</a><a target="_blank" href="http://bj.lianjia.com/wenda/liebiao/b6001/">北京房产政策问题解答</a></dd></div><div><dd><a target="_blank" href="http://bj.lianjia.com/fangjia/chaoyang/">朝阳</a><a target="_blank" href="http://bj.lianjia.com/fangjia/haidian/">海淀</a><a target="_blank" href="http://bj.lianjia.com/fangjia/changping/">昌平</a><a target="_blank" href="http://bj.lianjia.com/fangjia/tongzhou/">通州</a><a target="_blank" href="http://bj.lianjia.com/fangjia/yanjiao/">燕郊</a><a target="_blank" href="http://bj.lianjia.com/fangjia/xicheng/">西城</a><a target="_blank" href="http://bj.lianjia.com/fangjia/fengtai/">丰台</a><a target="_blank" href="http://bj.lianjia.com/fangjia/dongcheng/">东城</a><a target="_blank" href="http://bj.lianjia.com/fangjia/daxing/">大兴</a><a target="_blank" href="http://bj.lianjia.com/fangjia/shunyi/">顺义</a><a target="_blank" href="http://bj.lianjia.com/fangjia/fangshan/">房山</a><a target="_blank" href="http://bj.lianjia.com/fangjia/shijingshan/">石景山</a><a target="_blank" href="http://bj.lianjia.com/fangjia/yizhuangkaifaqu/">亦庄开发区</a><a target="_blank" href="http://bj.lianjia.com/fangjia/mentougou/">门头沟</a><a target="_blank" href="http://bj.lianjia.com/fangjia/sanlitun/">三里屯</a><a target="_blank" href="http://bj.lianjia.com/fangjia/xidan/">西单</a><a target="_blank" href="http://bj.lianjia.com/fangjia/shangdi1/">上地</a><a target="_blank" href="http://bj.lianjia.com/fangjia/cbd/">CBD</a><a target="_blank" href="http://bj.lianjia.com/fangjia/wangjing/">望京</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027381162/">新世界家园</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027382209/">远洋山水</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027381003/">新龙城</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027382206/">远洋沁山水</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027377579/">加州水郡</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027380051/">天通苑东一区</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027375357/">后现代城</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027376853/">东方太阳城</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027381403/">香悦四季</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027379063/">瑞雪春堂</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027378350/">美利山</a><a target="_blank" href="http://bj.lianjia.com/fangjia/c1111027376354/">翠成馨园</a></dd></div><div><dd><a target="_blank" href="http://bj.fang.lianjia.com/news/">北京房产资讯</a><a target="_blank" href="http://bj.fang.lianjia.com/news/guide_7/">北京刚需楼盘</a><a target="_blank" href="http://bj.fang.lianjia.com/news/guide_8/">北京改善性楼盘</a><a target="_blank" href="http://bj.fang.lianjia.com/news/16.html">北京豪宅楼盘</a><a target="_blank" href="http://m.lianjia.com/">手机房产网</a></dd></div></div></div><div class="clear"></div></div><div class="bottom"><div class="copyright fl">北京链家房地产经纪有限公司 | 网络经营许可证 京ICP备11024601号-12<br>© Copyright©2010-2015 链家网Lianjia.com版权所有</div><div class="hot-frauds fr"><label>热门商圈<i></i></label><div class="frauds-list"><i></i><div class="tab"><span  class="hover">A</span><span >B</span><span >C</span><span >D</span><span >E</span><span >F</span><span >G</span><span >H</span><span >J</span><span >K</span><span >L</span><span >M</span><span >N</span><span >P</span><span >Q</span><span >S</span><span >T</span><span >W</span><span >X</span><span >Y</span><span >Z</span></div><div class="link-list link-footer"><div><a href="http://bj.lianjia.com/ershoufang/andingmen1/" target="_blank">安定门二手房</a><a href="http://bj.lianjia.com/ershoufang/anzhen1/" target="_blank">安贞二手房</a><a href="http://bj.lianjia.com/ershoufang/aolinpikegongyuan11/" target="_blank">奥林匹克公园二手房</a><a href="http://bj.lianjia.com/ershoufang/anningzhuang1/" target="_blank">安宁庄二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/baizhifang1/" target="_blank">白纸坊二手房</a><a href="http://bj.lianjia.com/ershoufang/baiziwan/" target="_blank">百子湾二手房</a><a href="http://bj.lianjia.com/ershoufang/beiqijia/" target="_blank">北七家二手房</a><a href="http://bj.lianjia.com/ershoufang/beigongda/" target="_blank">北工大二手房</a><a href="http://bj.lianjia.com/ershoufang/beiguan/" target="_blank">北关二手房</a><a href="http://bj.lianjia.com/ershoufang/beiyuan2/" target="_blank">北苑二手房</a><a href="http://bj.lianjia.com/ershoufang/beitaipingzhuang/" target="_blank">北太平庄二手房</a><a href="http://bj.lianjia.com/ershoufang/baishiqiao1/" target="_blank">白石桥二手房</a><a href="http://bj.lianjia.com/ershoufang/beidadi/" target="_blank">北大地二手房</a><a href="http://bj.lianjia.com/ershoufang/beijingnanzhan1/" target="_blank">北京南站二手房</a><a href="http://bj.lianjia.com/ershoufang/bajiao1/" target="_blank">八角二手房</a><a href="http://bj.lianjia.com/ershoufang/baishanzhen/" target="_blank">百善镇二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/chongwenmen/" target="_blank">崇文门二手房</a><a href="http://bj.lianjia.com/ershoufang/chaoyangmennei1/" target="_blank">朝阳门内二手房</a><a href="http://bj.lianjia.com/ershoufang/chaoyangmenwai1/" target="_blank">朝阳门外二手房</a><a href="http://bj.lianjia.com/ershoufang/chegongzhuang1/" target="_blank">车公庄二手房</a><a href="http://bj.lianjia.com/ershoufang/changchunjie/" target="_blank">长椿街二手房</a><a href="http://bj.lianjia.com/ershoufang/caihuying/" target="_blank">菜户营二手房</a><a href="http://bj.lianjia.com/ershoufang/chaoyang/" target="_blank">朝阳二手房</a><a href="http://bj.lianjia.com/ershoufang/chaoqing/" target="_blank">朝青二手房</a><a href="http://bj.lianjia.com/ershoufang/cbd/" target="_blank">CBD二手房</a><a href="http://bj.lianjia.com/ershoufang/chaoyanggongyuan/" target="_blank">朝阳公园二手房</a><a href="http://bj.lianjia.com/ershoufang/changying/" target="_blank">常营二手房</a><a href="http://bj.lianjia.com/ershoufang/chengshousi1/" target="_blank">成寿寺二手房</a><a href="http://bj.lianjia.com/ershoufang/changwa/" target="_blank">厂洼二手房</a><a href="http://bj.lianjia.com/ershoufang/caoqiao/" target="_blank">草桥二手房</a><a href="http://bj.lianjia.com/ershoufang/changping/" target="_blank">昌平二手房</a><a href="http://bj.lianjia.com/ershoufang/changpingqita1/" target="_blank">昌平其它二手房</a><a href="http://bj.lianjia.com/ershoufang/changyang1/" target="_blank">长阳二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/dongcheng/" target="_blank">东城二手房</a><a href="http://bj.lianjia.com/ershoufang/dongzhimen/" target="_blank">东直门二手房</a><a href="http://bj.lianjia.com/ershoufang/dongdan/" target="_blank">东单二手房</a><a href="http://bj.lianjia.com/ershoufang/dianmen/" target="_blank">地安门二手房</a><a href="http://bj.lianjia.com/ershoufang/donghuashi/" target="_blank">东花市二手房</a><a href="http://bj.lianjia.com/ershoufang/dengshikou/" target="_blank">灯市口二手房</a><a href="http://bj.lianjia.com/ershoufang/dongsi1/" target="_blank">东四二手房</a><a href="http://bj.lianjia.com/ershoufang/deshengmen/" target="_blank">德胜门二手房</a><a href="http://bj.lianjia.com/ershoufang/dougezhuang/" target="_blank">豆各庄二手房</a><a href="http://bj.lianjia.com/ershoufang/dingfuzhuang/" target="_blank">定福庄二手房</a><a href="http://bj.lianjia.com/ershoufang/dongba/" target="_blank">东坝二手房</a><a href="http://bj.lianjia.com/ershoufang/dashanzi/" target="_blank">大山子二手房</a><a href="http://bj.lianjia.com/ershoufang/dongdaqiao/" target="_blank">东大桥二手房</a><a href="http://bj.lianjia.com/ershoufang/dawanglu/" target="_blank">大望路二手房</a><a href="http://bj.lianjia.com/ershoufang/dinghuisi/" target="_blank">定慧寺二手房</a><a href="http://bj.lianjia.com/ershoufang/dahongmen/" target="_blank">大红门二手房</a><a href="http://bj.lianjia.com/ershoufang/daxingqita11/" target="_blank">大兴其它二手房</a><a href="http://bj.lianjia.com/ershoufang/dongguan/" target="_blank">东关二手房</a><a href="http://bj.lianjia.com/ershoufang/daxing/" target="_blank">大兴二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/erlizhuang/" target="_blank">二里庄二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/fuchengmen/" target="_blank">阜成门二手房</a><a href="http://bj.lianjia.com/ershoufang/fangzhuang1/" target="_blank">方庄二手房</a><a href="http://bj.lianjia.com/ershoufang/fatou/" target="_blank">垡头二手房</a><a href="http://bj.lianjia.com/ershoufang/fengtai/" target="_blank">丰台二手房</a><a href="http://bj.lianjia.com/ershoufang/fengtaiqita1/" target="_blank">丰台其它二手房</a><a href="http://bj.lianjia.com/ershoufang/fangshan/" target="_blank">房山二手房</a><a href="http://bj.lianjia.com/ershoufang/fangshanqita11/" target="_blank">房山其它1二手房</a><a href="http://bj.lianjia.com/ershoufang/fangshanqita21/" target="_blank">房山其它2二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/guangqumen/" target="_blank">广渠门二手房</a><a href="http://bj.lianjia.com/ershoufang/gongti/" target="_blank">工体二手房</a><a href="http://bj.lianjia.com/ershoufang/guanyuan/" target="_blank">官园二手房</a><a href="http://bj.lianjia.com/ershoufang/guanganmen/" target="_blank">广安门二手房</a><a href="http://bj.lianjia.com/ershoufang/guanzhuang/" target="_blank">管庄二手房</a><a href="http://bj.lianjia.com/ershoufang/ganluyuan/" target="_blank">甘露园二手房</a><a href="http://bj.lianjia.com/ershoufang/guozhan1/" target="_blank">国展二手房</a><a href="http://bj.lianjia.com/ershoufang/gaobeidian/" target="_blank">高碑店二手房</a><a href="http://bj.lianjia.com/ershoufang/gongzhufen/" target="_blank">公主坟二手房</a><a href="http://bj.lianjia.com/ershoufang/ganjiakou/" target="_blank">甘家口二手房</a><a href="http://bj.lianjia.com/ershoufang/gucheng/" target="_blank">古城二手房</a><a href="http://bj.lianjia.com/ershoufang/guoyuan1/" target="_blank">果园二手房</a><a href="http://bj.lianjia.com/ershoufang/guloudajie/" target="_blank">鼓楼大街二手房</a><a href="http://bj.lianjia.com/ershoufang/guanyinsi/" target="_blank">观音寺二手房</a><a href="http://bj.lianjia.com/ershoufang/guan11/" target="_blank">固安二手房</a><a href="http://bj.lianjia.com/ershoufang/guangyang1/" target="_blank">广阳二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/hepingli/" target="_blank">和平里二手房</a><a href="http://bj.lianjia.com/ershoufang/huaweiqiao/" target="_blank">华威桥二手房</a><a href="http://bj.lianjia.com/ershoufang/hongmiao/" target="_blank">红庙二手房</a><a href="http://bj.lianjia.com/ershoufang/huixinxijie/" target="_blank">惠新西街二手房</a><a href="http://bj.lianjia.com/ershoufang/huanlegu/" target="_blank">欢乐谷二手房</a><a href="http://bj.lianjia.com/ershoufang/haidian/" target="_blank">海淀二手房</a><a href="http://bj.lianjia.com/ershoufang/haidianqita1/" target="_blank">海淀其它二手房</a><a href="http://bj.lianjia.com/ershoufang/haidianbeibuxinqu1/" target="_blank">海淀北部新区二手房</a><a href="http://bj.lianjia.com/ershoufang/heyi/" target="_blank">和义二手房</a><a href="http://bj.lianjia.com/ershoufang/huaxiang/" target="_blank">花乡二手房</a><a href="http://bj.lianjia.com/ershoufang/huilongguan2/" target="_blank">回龙观二手房</a><a href="http://bj.lianjia.com/ershoufang/huoying/" target="_blank">霍营二手房</a><a href="http://bj.lianjia.com/ershoufang/huangcunzhong/" target="_blank">黄村中二手房</a><a href="http://bj.lianjia.com/ershoufang/huangcunhuochezhan/" target="_blank">黄村火车站二手房</a><a href="http://bj.lianjia.com/ershoufang/huangcunbei/" target="_blank">黄村北二手房</a><a href="http://bj.lianjia.com/ershoufang/houshayu1/" target="_blank">后沙峪二手房</a><a href="http://bj.lianjia.com/ershoufang/huairou/" target="_blank">怀柔二手房</a><a href="http://bj.lianjia.com/ershoufang/huairouchengqu1/" target="_blank">怀柔二手房</a><a href="http://bj.lianjia.com/ershoufang/huairouqita1/" target="_blank">怀柔其它二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/jinsong/" target="_blank">劲松二手房</a><a href="http://bj.lianjia.com/ershoufang/jiaodaokou/" target="_blank">交道口二手房</a><a href="http://bj.lianjia.com/ershoufang/jinbaojie/" target="_blank">金宝街二手房</a><a href="http://bj.lianjia.com/ershoufang/jianguomenwai/" target="_blank">建国门外二手房</a><a href="http://bj.lianjia.com/ershoufang/jianguomennei/" target="_blank">建国门内二手房</a><a href="http://bj.lianjia.com/ershoufang/jinrongjie/" target="_blank">金融街二手房</a><a href="http://bj.lianjia.com/ershoufang/jiuxianqiao/" target="_blank">酒仙桥二手房</a><a href="http://bj.lianjia.com/ershoufang/jianxiangqiao1/" target="_blank">健翔桥二手房</a><a href="http://bj.lianjia.com/ershoufang/junbo1/" target="_blank">军博二手房</a><a href="http://bj.lianjia.com/ershoufang/jiugong1/" target="_blank">旧宫二手房</a><a href="http://bj.lianjia.com/ershoufang/jiaomen/" target="_blank">角门二手房</a><a href="http://bj.lianjia.com/ershoufang/jiukeshu12/" target="_blank">九棵树(家乐福)二手房</a><a href="http://bj.lianjia.com/ershoufang/jixian1/" target="_blank">蓟县二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/kandanqiao/" target="_blank">看丹桥二手房</a><a href="http://bj.lianjia.com/ershoufang/kejiyuanqu/" target="_blank">科技园区二手房</a><a href="http://bj.lianjia.com/ershoufang/kaifaquqita1/" target="_blank">开发区其它二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/liupukang/" target="_blank">六铺炕二手房</a><a href="http://bj.lianjia.com/ershoufang/laoshan1/" target="_blank">老山二手房</a><a href="http://bj.lianjia.com/ershoufang/liuliqiao1/" target="_blank">六里桥二手房</a><a href="http://bj.lianjia.com/ershoufang/lugouqiao1/" target="_blank">卢沟桥二手房</a><a href="http://bj.lianjia.com/ershoufang/lugu1/" target="_blank">鲁谷二手房</a><a href="http://bj.lianjia.com/ershoufang/lize/" target="_blank">丽泽二手房</a><a href="http://bj.lianjia.com/ershoufang/liujiayao/" target="_blank">刘家窑二手房</a><a href="http://bj.lianjia.com/ershoufang/liyuan/" target="_blank">梨园二手房</a><a href="http://bj.lianjia.com/ershoufang/linheli/" target="_blank">临河里二手房</a><a href="http://bj.lianjia.com/ershoufang/luyuan/" target="_blank">潞苑二手房</a><a href="http://bj.lianjia.com/ershoufang/lishuiqiao1/" target="_blank">立水桥二手房</a><a href="http://bj.lianjia.com/ershoufang/longze1/" target="_blank">龙泽二手房</a><a href="http://bj.lianjia.com/ershoufang/liqiao1/" target="_blank">李桥二手房</a><a href="http://bj.lianjia.com/ershoufang/liangxiang/" target="_blank">良乡二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/muxiyuan1/" target="_blank">木樨园二手房</a><a href="http://bj.lianjia.com/ershoufang/madian1/" target="_blank">马甸二手房</a><a href="http://bj.lianjia.com/ershoufang/maliandao1/" target="_blank">马连道二手房</a><a href="http://bj.lianjia.com/ershoufang/muxidi1/" target="_blank">木樨地二手房</a><a href="http://bj.lianjia.com/ershoufang/mudanyuan/" target="_blank">牡丹园二手房</a><a href="http://bj.lianjia.com/ershoufang/malianwa/" target="_blank">马连洼二手房</a><a href="http://bj.lianjia.com/ershoufang/majiabao/" target="_blank">马家堡二手房</a><a href="http://bj.lianjia.com/ershoufang/majuqiao1/" target="_blank">马驹桥二手房</a><a href="http://bj.lianjia.com/ershoufang/mapo/" target="_blank">马坡二手房</a><a href="http://bj.lianjia.com/ershoufang/mentougou/" target="_blank">门头沟二手房</a><a href="http://bj.lianjia.com/ershoufang/mentougouqita1/" target="_blank">门头沟其它二手房</a><a href="http://bj.lianjia.com/ershoufang/miyun/" target="_blank">密云二手房</a><a href="http://bj.lianjia.com/ershoufang/miyunqita11/" target="_blank">密云其它二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/niujie/" target="_blank">牛街二手房</a><a href="http://bj.lianjia.com/ershoufang/nanshatan1/" target="_blank">南沙滩二手房</a><a href="http://bj.lianjia.com/ershoufang/nongzhanguan/" target="_blank">农展馆二手房</a><a href="http://bj.lianjia.com/ershoufang/nankou/" target="_blank">南口二手房</a><a href="http://bj.lianjia.com/ershoufang/nanshao/" target="_blank">南邵二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/puhuangyu/" target="_blank">蒲黄榆二手房</a><a href="http://bj.lianjia.com/ershoufang/panjiayuan1/" target="_blank">潘家园二手房</a><a href="http://bj.lianjia.com/ershoufang/pingguoyuan1/" target="_blank">苹果园二手房</a><a href="http://bj.lianjia.com/ershoufang/pinggu/" target="_blank">平谷二手房</a><a href="http://bj.lianjia.com/ershoufang/pingguqita1/" target="_blank">平谷其它二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/qianmen/" target="_blank">前门二手房</a><a href="http://bj.lianjia.com/ershoufang/qinghe11/" target="_blank">清河二手房</a><a href="http://bj.lianjia.com/ershoufang/qingta1/" target="_blank">青塔二手房</a><a href="http://bj.lianjia.com/ershoufang/qilizhuang/" target="_blank">七里庄二手房</a><a href="http://bj.lianjia.com/ershoufang/qiaozhuang/" target="_blank">乔庄二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/shaoyaoju/" target="_blank">芍药居二手房</a><a href="http://bj.lianjia.com/ershoufang/sanyuanqiao/" target="_blank">三元桥二手房</a><a href="http://bj.lianjia.com/ershoufang/shuangqiao/" target="_blank">双桥二手房</a><a href="http://bj.lianjia.com/ershoufang/shibalidian1/" target="_blank">十八里店二手房</a><a href="http://bj.lianjia.com/ershoufang/shilihe/" target="_blank">十里河二手房</a><a href="http://bj.lianjia.com/ershoufang/sihui/" target="_blank">四惠二手房</a><a href="http://bj.lianjia.com/ershoufang/shifoying/" target="_blank">石佛营二手房</a><a href="http://bj.lianjia.com/ershoufang/shoudoujichang1/" target="_blank">首都机场二手房</a><a href="http://bj.lianjia.com/ershoufang/shilibao/" target="_blank">十里堡二手房</a><a href="http://bj.lianjia.com/ershoufang/shuangjing/" target="_blank">双井二手房</a><a href="http://bj.lianjia.com/ershoufang/sanlitun/" target="_blank">三里屯二手房</a><a href="http://bj.lianjia.com/ershoufang/shijicheng/" target="_blank">世纪城二手房</a><a href="http://bj.lianjia.com/ershoufang/shangdi1/" target="_blank">上地二手房</a><a href="http://bj.lianjia.com/ershoufang/suzhouqiao/" target="_blank">苏州桥二手房</a><a href="http://bj.lianjia.com/ershoufang/shuangyushu/" target="_blank">双榆树二手房</a><a href="http://bj.lianjia.com/ershoufang/sijiqing/" target="_blank">四季青二手房</a><a href="http://bj.lianjia.com/ershoufang/songjiazhuang/" target="_blank">宋家庄二手房</a><a href="http://bj.lianjia.com/ershoufang/shijingshan/" target="_blank">石景山二手房</a><a href="http://bj.lianjia.com/ershoufang/shijingshanqita1/" target="_blank">石景山其它二手房</a><a href="http://bj.lianjia.com/ershoufang/shahe2/" target="_blank">沙河二手房</a><a href="http://bj.lianjia.com/ershoufang/shunyi/" target="_blank">顺义二手房</a><a href="http://bj.lianjia.com/ershoufang/shunyicheng/" target="_blank">顺义城二手房</a><a href="http://bj.lianjia.com/ershoufang/shunyiqita1/" target="_blank">顺义其它二手房</a><a href="http://bj.lianjia.com/ershoufang/sanhe1/" target="_blank">三河二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/tiantan/" target="_blank">天坛二手房</a><a href="http://bj.lianjia.com/ershoufang/taoranting1/" target="_blank">陶然亭二手房</a><a href="http://bj.lianjia.com/ershoufang/taipingqiao1/" target="_blank">太平桥二手房</a><a href="http://bj.lianjia.com/ershoufang/tianningsi1/" target="_blank">天宁寺二手房</a><a href="http://bj.lianjia.com/ershoufang/tongzhoubeiyuan/" target="_blank">通州北苑二手房</a><a href="http://bj.lianjia.com/ershoufang/tuanjiehu/" target="_blank">团结湖二手房</a><a href="http://bj.lianjia.com/ershoufang/taiyanggong/" target="_blank">太阳宫二手房</a><a href="http://bj.lianjia.com/ershoufang/tianshuiyuan/" target="_blank">甜水园二手房</a><a href="http://bj.lianjia.com/ershoufang/tiancun1/" target="_blank">田村二手房</a><a href="http://bj.lianjia.com/ershoufang/tongzhou/" target="_blank">通州二手房</a><a href="http://bj.lianjia.com/ershoufang/tongzhouqita11/" target="_blank">通州其它二手房</a><a href="http://bj.lianjia.com/ershoufang/tiantongyuan1/" target="_blank">天通苑二手房</a><a href="http://bj.lianjia.com/ershoufang/tiangongyuan/" target="_blank">天宫院二手房</a><a href="http://bj.lianjia.com/ershoufang/tianzhu1/" target="_blank">天竺二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/wangjing/" target="_blank">望京二手房</a><a href="http://bj.lianjia.com/ershoufang/wanliu/" target="_blank">万柳二手房</a><a href="http://bj.lianjia.com/ershoufang/wukesong1/" target="_blank">五棵松二手房</a><a href="http://bj.lianjia.com/ershoufang/wudaokou/" target="_blank">五道口二手房</a><a href="http://bj.lianjia.com/ershoufang/weigongcun/" target="_blank">魏公村二手房</a><a href="http://bj.lianjia.com/ershoufang/wanshoulu1/" target="_blank">万寿路二手房</a><a href="http://bj.lianjia.com/ershoufang/wulidian/" target="_blank">五里店二手房</a><a href="http://bj.lianjia.com/ershoufang/wuyihuayuan/" target="_blank">武夷花园二手房</a><a href="http://bj.lianjia.com/ershoufang/wuqing1/" target="_blank">武清二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/xidan/" target="_blank">西单二手房</a><a href="http://bj.lianjia.com/ershoufang/xiluoyuan/" target="_blank">西罗园二手房</a><a href="http://bj.lianjia.com/ershoufang/xicheng/" target="_blank">西城二手房</a><a href="http://bj.lianjia.com/ershoufang/xinjiekou2/" target="_blank">新街口二手房</a><a href="http://bj.lianjia.com/ershoufang/xizhimen1/" target="_blank">西直门二手房</a><a href="http://bj.lianjia.com/ershoufang/xuanwumen12/" target="_blank">宣武门二手房</a><a href="http://bj.lianjia.com/ershoufang/xisi1/" target="_blank">西四二手房</a><a href="http://bj.lianjia.com/ershoufang/xibahe/" target="_blank">西坝河二手房</a><a href="http://bj.lianjia.com/ershoufang/xueyuanlu1/" target="_blank">学院路二手房</a><a href="http://bj.lianjia.com/ershoufang/xisanqi1/" target="_blank">西三旗二手房</a><a href="http://bj.lianjia.com/ershoufang/xiaoxitian1/" target="_blank">小西天二手房</a><a href="http://bj.lianjia.com/ershoufang/xishan21/" target="_blank">西山二手房</a><a href="http://bj.lianjia.com/ershoufang/xierqi1/" target="_blank">西二旗二手房</a><a href="http://bj.lianjia.com/ershoufang/xibeiwang/" target="_blank">西北旺二手房</a><a href="http://bj.lianjia.com/ershoufang/xihongmen/" target="_blank">西红门二手房</a><a href="http://bj.lianjia.com/ershoufang/xingong/" target="_blank">新宫二手房</a><a href="http://bj.lianjia.com/ershoufang/xinhuadajie/" target="_blank">新华大街二手房</a><a href="http://bj.lianjia.com/ershoufang/xianghe1/" target="_blank">香河二手房</a><a href="http://bj.lianjia.com/ershoufang/xiaotangshan1/" target="_blank">小汤山二手房</a><a href="http://bj.lianjia.com/ershoufang/xiguanhuandao/" target="_blank">西关环岛二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/yongdingmen/" target="_blank">永定门二手房</a><a href="http://bj.lianjia.com/ershoufang/yuetan/" target="_blank">月坛二手房</a><a href="http://bj.lianjia.com/ershoufang/youanmennei11/" target="_blank">右安门内二手房</a><a href="http://bj.lianjia.com/ershoufang/yayuncun/" target="_blank">亚运村二手房</a><a href="http://bj.lianjia.com/ershoufang/yansha1/" target="_blank">燕莎二手房</a><a href="http://bj.lianjia.com/ershoufang/yayuncunxiaoying/" target="_blank">亚运村小营二手房</a><a href="http://bj.lianjia.com/ershoufang/yuquanlu11/" target="_blank">玉泉路二手房</a><a href="http://bj.lianjia.com/ershoufang/yangzhuang1/" target="_blank">杨庄二手房</a><a href="http://bj.lianjia.com/ershoufang/yuanmingyuan/" target="_blank">圆明园二手房</a><a href="http://bj.lianjia.com/ershoufang/yiheyuan/" target="_blank">颐和园二手房</a><a href="http://bj.lianjia.com/ershoufang/yangqiao1/" target="_blank">洋桥二手房</a><a href="http://bj.lianjia.com/ershoufang/yuegezhuang/" target="_blank">岳各庄二手房</a><a href="http://bj.lianjia.com/ershoufang/yuquanying/" target="_blank">玉泉营二手房</a><a href="http://bj.lianjia.com/ershoufang/youanmenwai/" target="_blank">右安门外二手房</a><a href="http://bj.lianjia.com/ershoufang/yuqiao/" target="_blank">玉桥二手房</a><a href="http://bj.lianjia.com/ershoufang/yizhuangkaifaquqita1/" target="_blank">亦庄开发区其它二手房</a><a href="http://bj.lianjia.com/ershoufang/yanjiaochengqu/" target="_blank">燕郊城区二手房</a><a href="http://bj.lianjia.com/ershoufang/yanqingqita1/" target="_blank">延庆其它二手房</a><a href="http://bj.lianjia.com/ershoufang/yizhuang1/" target="_blank">亦庄二手房</a><a href="http://bj.lianjia.com/ershoufang/yizhuangkaifaqu/" target="_blank">亦庄开发区二手房</a><a href="http://bj.lianjia.com/ershoufang/yanqing/" target="_blank">延庆二手房</a><a href="http://bj.lianjia.com/ershoufang/yanjiao/" target="_blank">燕郊二手房</a></div><div><a href="http://bj.lianjia.com/ershoufang/zuoanmen1/" target="_blank">左安门二手房</a><a href="http://bj.lianjia.com/ershoufang/zhongyangbieshuqu1/" target="_blank">中央别墅区二手房</a><a href="http://bj.lianjia.com/ershoufang/zhaoyangqita1/" target="_blank">朝阳其它1二手房</a><a href="http://bj.lianjia.com/ershoufang/zhaoyangqita21/" target="_blank">朝阳其它2二手房</a><a href="http://bj.lianjia.com/ershoufang/zhongguancun/" target="_blank">中关村二手房</a><a href="http://bj.lianjia.com/ershoufang/zizhuqiao/" target="_blank">紫竹桥二手房</a><a href="http://bj.lianjia.com/ershoufang/zhichunlu/" target="_blank">知春路二手房</a><a href="http://bj.lianjia.com/ershoufang/zaojunmiao/" target="_blank">皂君庙二手房</a><a href="http://bj.lianjia.com/ershoufang/zhaogongkou/" target="_blank">赵公口二手房</a><a href="http://bj.lianjia.com/ershoufang/zaoyuan/" target="_blank">枣园二手房</a><a href="http://bj.lianjia.com/ershoufang/zhuozhou/" target="_blank">涿州二手房</a></div></div></div></div></div></div></div>
+
+
+
+
+<div class="fix-right-v2" id="back-top"  log-mod="sidebar">
+	<table>
+		<tr>
+			<td>
+				<div class="sidebar-wrap">
+					<ul>
+						<li class="myfav">
+							<a title="我关注的房源" data-url="http://user.lianjia.com/site/favorHouse/" data-bl="myfav">我关注的房源</a>
+							<span class="popup"><i></i>我关注的房源</span>
+						</li>
+					</ul>
+					<div class="sidebar-line"></div>
+					
+											<ul>
+							 
+								<li class="ask">
+									<a title="我要提问" href="http://bj.lianjia.com/wenda/" target="_blank" data-bl="wenda">我要提问</a>
+									<span class="popup"><i></i>我要提问</span>
+								</li>
+														 
+								<li class="sell">
+									<a title="在线卖房" href="http://bj.lianjia.com/yezhu/" target="_blank" data-bl="sell">在线卖房</a>
+									<span class="popup"><i></i>在线卖房</span>
+								</li>
+													</ul>
+						<div class="sidebar-line"></div>
+										<ul>
+						 
+							<li class="baodan">
+								<a href="http://www.lianjia.com/zhuanti/baodan#110000" title="安心保单" target="_blank" data-bl="baodan">安心保单</a>
+								<span class="popup"><i></i>安心保单</span>
+							</li>
+												<li class="download">
+							<a href="http://www.lianjia.com/client/" title="" target="_blank" data-bl="client">下载掌上链家</a>
+							<span class="popup popup-qr">
+								<i></i>
+								<img src="http://static2.ljcdn.com/pc/asset/img/home/sidebar_qr.png?_v=20160302224917" alt="下载掌上链家" width="61">
+								<em class="qr-title">掌 上 链 家</em>
+							</span>
+						</li>
+						<li class="phone">
+							<a title="官方客服">官方客服</a>
+							<span class="popup"><i></i>官方客服 4007 001 001</span>
+						</li>
+						<li class="feedback" id="feedback">
+							<a title="反馈/投诉" data-bl="feedback"></a>
+                            <span class="popup"><i></i>反馈/投诉</span>
+						</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<ul>
+		<li class="gotop" id="gotop" style="display: none;">
+			<a title="返回顶部">返回顶部</a>
+			<span class="popup"><i></i>返回顶部</span>
+		</li>
+	</ul>
+</div>
+
+
+<div class="feedback-box animated">
+	<p>您对新版链家网有任何意见和建议，或使用中遇到的问题，请在本页面反馈。
+我们会每天关注并不断优化产品，为您提供更好的服务！</p>
+<!-- 开举报入口的城市ID -->
+	<div class="tab">
+		<span class="check">意见反馈</span>
+		<span class="ent">我要投诉</span>
+	</div>
+	<div class="complain">
+		<div class="tab-box">
+			<div class="box">
+				<span>反馈内容<label class="erro-tips">请输入反馈内容</label></span>
+				<textarea id="count" placeholder="我们非常乐意收到您使用网站过程中的感受和意见" autofocus></textarea>
+			</div>
+			<div class="box">
+				<span>联系方式<i>(选填)</i></span>
+				<input type="text" id="tel" placeholder="手机号、Email、QQ均可">
+			</div>
+			<div class="clear"></div>
+			<div class="fl">
+				<button id="sub">提交反馈</button>
+				<span id="tips"></span>
+			</div>
+		</div>
+		<div class="tab-box appeal"  style="display:none;">
+			<div class="tel"><i></i>投诉热线/4007001001</div>
+			<b>处理流程</b>
+			<p>
+				您可以通过链家网投诉热线提交投诉，我们会在24小时内（工作时间）反馈解决方案
+			</p>
+			<div id="tousu">
+				<b>投诉公示</b>
+				<ul id="list">
+					
+				</ul>
+				<a href="/topic/tousu/" target="_blank">点击查看全部详情</a>
+			</div>
+		</div>
+	</div>
+	<div class="closebok"><img src="http://cdn.lianjia.com/pc/asset/img/jingjiren/close.png?_v=20150721"></div>
+</div>
+<script src="http://static2.ljcdn.com/pc/asset/base/fe.js?_v=20160302224917"></script><script src="http://static2.ljcdn.com/pc/asset/common/common.js?_v=20160302224917"></script><div style="display:none"><script src="http://static2.ljcdn.com/dep/ljanalytics.js?_v=20160302224917"></script></div><div id="only" data-city="bj" data-page="xuequfang_search"></div>
+
+<script>var path = 'http://static2.ljcdn.com/pc/asset?_v=20160302224917'.split("?");require.config({baseUrl: path[0],paths: {'echarts' : '../../dep/echarts-1.4.1/build/echarts','echarts/chart/bar' : '../../dep/echarts-1.4.1/build/echarts','echarts/chart/line' : '../../dep/echarts-1.4.1/build/echarts','echarts/chart/pie' : '../../dep/echarts-1.4.1/build/echarts','common': 'common','jquery-ui': '../../dep/jquery-ui/jquery-ui.min'},urlArgs:  path[1]});var feData = {"cityName": "北京","getFavHouseUrl":       "/api/gethousefav","setFavHouseUrl":       "/api/sethousefav","getLastSearch":        "/api/getlastsearch","getCommunityHistory":  "/api/getcommunityhistory","verifyHouse":          "/api/verifyHouse","getUser":              "/api/getUser","verifyCode":           "/api/getVerifyCode","complaint":            "/api/complaint","getDecoration":        "/api/getDecoration","trendData" :           "/site/getpicinfo"}</script>
+<script type="text/javascript">
+require(['list/main'], function (main) {
+    main.init({
+        feRoot: 'http://static2.ljcdn.com/?_v=20160302224917',
+        cityName: '北京',
+        mapak: 'C106a48023d9606dcdad761cbc070095',
+        mapDomId: 'map-box',
+        reqData: {
+            cityId: '110000'
+        },
+        
+        common: feData
+    });
+});
+</script>
+
+<!-- ｛include file='../common/toolbar.tpl'} -->
+<script>require(['common/suggestion'], function (suggestion) {window.defaultSuggest = suggestion.init({requestOptions: {cityId: '110000',cityName: '北京'},url: '/api/headerSearch?channel=xuequfang&q=',main: '#keyword-box',appendTo: '#suggest-cont',redirect: true});});</script><div class="loninContaner"><div class="overlay_bg"></div><div class="panel_login animated" id="dialog"><div class="panel_info"><div class="panel_tab"><div class="title"><div class="fl">用户登录</div><label class="fr">还没有链家网账号？<a href="http://passport.lianjia.com/register/resources/lianjia/register.html?service=http%3A%2F%2Fbj.lianjia.com%2F">马上注册</a></label></div><div class="clear"></div><div id="con_login_user"><form action="" method="post"><ul><li class="show-error"><dd>用户名或密码错误</dd></li><li class="item userName"><i></i><input type="text" class="the_input users" placeholder="请输入手机号" /></li><li class="item pwd"><i></i><input type="password" class="the_input password"  placeholder="请输入登录密码"/></li><li class="item checkVerimg" style="display:none"><input type="text" class="the_input ver-img" maxlength="4"  placeholder="请输入验证码"/><img class="verImg"></li><li class="li_01"><label><input type="checkbox" name="remember" value="1" class="mind-login">下次自动登录</label><a href="https://passport.lianjia.com/register/resources/lianjia/forget.html?service=http://bj.lianjia.com/">找回密码</a></li><li><a class="login-user-btn"  />立即登录</a></li></ul></form></div><div id="con_login_agent" class="undis"><form action="" method="post"><ul><li class="item"><dd></dd><input type="text" class="the_input users" placeholder="输入经纪人ID号码" /></li><li class="item"><input type="password" class="the_input password"  placeholder="登录密码"/></li><li class="li_01"><label><input type="checkbox" name="remember" value="1" class="mind-login">下次自动登录</label><a href="https://passport.lianjia.com/register/resources/lianjia/forget.html?service=http://bj.lianjia.com/">找回密码</a></li><li><input class="login-agent-btn" value="立即登录"/></li></ul></form></div></div></div><div class="registered"></div></div></div><!-- LianjiaIM Style --><link property='stylesheet' rel="stylesheet" href="http://static2.ljcdn.com/pc/asset/lianjiaIM/css/lianjiaIM.css?_v=20160302224917"/><!-- LianjiaIM Script --><!--[if gt IE 8]<!--><script src="http://static2.ljcdn.com/pc/asset/lianjiaIM/leancloud/dist/av-core-mini.js?_v=20160302224917"></script><!--[endif]--><!--[if lt IE 10]><script type="text/javascript" src="http://static2.ljcdn.com/pc/asset/lianjiaIM/leancloud/plugin/web-socket-js/swfobject.js?_v=20160302224917"></script><script type="text/javascript" src="http://static2.ljcdn.com/pc/asset/lianjiaIM/leancloud/plugin/web-socket-js/web_socket.js?_v=20160302224917"></script><script type="text/javascript">window.WEB_SOCKET_SWF_LOCATION = "http://static2.ljcdn.com/pc/asset/lianjiaIM/leancloud/plugin/web-socket-js/WebSocketMainInsecure.swf?_v=20160302224917";</script><![endif]--><script src="http://static2.ljcdn.com/pc/asset/lianjiaIM/leancloud/dist/AV.realtime.min.js?_v=20160302224917"></script><script type="text/javascript">var defaultPicUrl = 'http://static2.ljcdn.com/pc/asset/img/new-version/default_block.png?_v=20160302224917',defaultAvatarUrl = 'http://static2.ljcdn.com/pc/asset/lianjiaIM/img/icon_user@2x.png?_v=20160302224917',defaultAgentAvatarUrl = 'http://static2.ljcdn.com/pc/asset/img/jingjiren/noimg.jpg?_v=20160302224917',defaultLianjiaServiceAvatarUrl = 'http://static2.ljcdn.com/pc/asset/lianjiaIM/img/icon_serv@2x.png?_v=20160302224917',ucid = '',leancloud = {"ajaxroot":"http:\/\/ajax.api.lianjia.com\/","leanCloudAppid":"4e1dh2g3tn08i6swaqtperykbrdas2r8xebmusjeucrptsfd","leanCloudAppkey":"jcd4alcajl0cp4w7vj6gd8zuib7chk5653dy4biffqgynn4n"};
+    $.listener.on('userInfo', function (data) {
+      var userLoginData = null;
+
+      if (data.code == 1) {
+        userLoginData = $.extend(
+            data,
+            {
+              'ucid': ucid
+            }
+        );
+      }
+
+      require(['lianjiaIM/lianjiaIM'], function (LianjiaIM) {
+        window.im = new LianjiaIM({
+          'leancloudConfig': leancloud,
+          'userLoginData': userLoginData,
+          'defaultAvatarUrl': defaultAvatarUrl,
+          'defaultAgentAvatarUrl': defaultAgentAvatarUrl,
+          'defaultLianjiaServiceAvatarUrl': defaultLianjiaServiceAvatarUrl,
+          'defaultPicUrl': defaultPicUrl
+        });
+      });
+
+    });
+    </script><script type="text/javascript">var advert = 'http://static2.ljcdn.com/pc/asset/common/advert.js?_v=20160302224917';
+    $.listener.on('userInfo', function (data) {
+      window.loginData = data;
+    });
+    var mvl = document.createElement('script');
+    mvl.type = 'text/javascript'; 
+    mvl.async = true;
+    mvl.src = advert;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(mvl, s); 
+  </script></body></html>
