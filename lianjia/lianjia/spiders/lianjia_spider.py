@@ -40,7 +40,7 @@ class LianjiaSider(Spider):
             house_url = house.xpath('.//div[@class="pic-panel"]/a/@href').extract()[0]
             yield scrapy.Request(house_url, callback=self.house_parse)
             #print house_url
-            if count > 6:
+            if count > 1:
                 break
         '''
         #获取下一页的信息
@@ -73,8 +73,9 @@ class LianjiaSider(Spider):
         item['title'] = title_line.xpath('.//h1[@class="title-box left"]/text()').extract()[0]
 
         #//*[@id="commentsCon"]/div[1]/div[1]/p[1]/text()
-        pinglun = sel.xpath('//*[@id="firstData"]').extract()[0]
-        print pinglun
+        pinglun = sel.xpath('//*[@id="firstData"]/text()').extract()[0]
+        print (json.dumps(pinglun))
+        #print
         #
         # 解析成中文
         #b = json.dumps((pinglun)).replace("\\\\","\\")
