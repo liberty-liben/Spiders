@@ -7,6 +7,7 @@
 
 import scrapy
 
+#在售二手房源信息
 class LianjiaItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -31,7 +32,10 @@ class LianjiaItem(scrapy.Item):
     house_url = scrapy.Field()  # 该房源的url
     zhuangtai = scrapy.Field()  # 房源状态,是否成交
     kanfangshu = scrapy.Field() # 客户看房数
+    dengjitime = scrapy.Field() # 房屋登记时间
+    crawltime = scrapy.Field()  # 数据抓取时间
 
+#小区信息
 class XiaoQuItem(scrapy.Item):
     xiaoqu = scrapy.Field()             #小区名称
     xiaoqu_url = scrapy.Field()         #url

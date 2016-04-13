@@ -12,13 +12,6 @@ sys.setdefaultencoding('utf-8')
 from pymongo import MongoClient
 
 
-def get_db():
-    client = MongoClient( DB_ADDRESS, DB_PORT )
-    db = client[DB_NAME]
-    db.authenticate( DB_USER, DB_PASS )
-    return db
-
-
 class LianjiaPipeline(object):
 
     def __init__(self):
@@ -40,6 +33,7 @@ class LianjiaPipeline(object):
         #line = json.dumps(data)+'\n'
         #因为抓取的数据是unicode编码,所以要进行解码decode('unicode_escape')
         #self.file.write(line.decode('unicode_escape'))
-        self.db[self.collection_name].insert(data)
+        #self.db[self.collection_name].insert(data)
+        self.db[self.collection_name].update({'_id':data['house_id']},{'$set':data},True)
 
         return item
