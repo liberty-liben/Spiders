@@ -33,7 +33,7 @@ class LianjiaItem(scrapy.Item):
     zhuangtai = scrapy.Field()  # 房源状态,是否成交
     kanfangshu = scrapy.Field() # 客户看房数
     dengjitime = scrapy.Field() # 房屋登记时间
-    crawltime = scrapy.Field()  # 数据抓取时间
+    zhuaqutime = scrapy.Field()  # 数据抓取时间
 
 #小区信息
 class XiaoQuItem(scrapy.Item):

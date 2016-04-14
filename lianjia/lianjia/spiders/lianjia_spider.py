@@ -62,7 +62,7 @@ class LianjiaSider(Spider):
             nexturl=p.findall(pageurl)[0]
             next_page_url='http://bj.lianjia.com'+nexturl+str(curpage+1)
             #print next_page_url
-            time.sleep(0.5)
+            #time.sleep(1)
             yield scrapy.Request(next_page_url, callback=self.parse)
 
     #解析房源信息
