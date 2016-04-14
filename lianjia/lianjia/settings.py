@@ -14,9 +14,14 @@ BOT_NAME = 'lianjia'
 SPIDER_MODULES = ['lianjia.spiders']
 NEWSPIDER_MODULE = 'lianjia.spiders'
 
+
+#使用pipelines
 ITEM_PIPELINES = {
     'lianjia.pipelines.LianjiaPipeline':300
 }
+
+#禁止cookies,防止被ban
+COOKIES_ENABLED = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'lianjia (+http://www.yourdomain.com)'
