@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 import url_manager,html_downloader,html_outputer,html_parser
 
-class SpiderMxain(object):
+class SpiderMain(object):
     def __init__(self):
         self.urls = url_manager.UrlManager()
         self.downloader = html_downloader.HtmlDownLoader()
@@ -32,5 +32,5 @@ class SpiderMxain(object):
 
 if __name__ == '__main__':
     root_url = 'http://baike.baidu.com/view/21087.htm'
-    obj_spider = SpiderMxain()
+    obj_spider = SpiderMain()
     obj_spider.craw(root_url)
