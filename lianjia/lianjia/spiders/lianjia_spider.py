@@ -74,7 +74,7 @@ class LianjiaSider(Spider):
 
         for k in business_area_urls:
             url = business_area_urls.get(k)
-            print k,url
+            #print k,url
             yield scrapy.Request(url,callback=self.parse_house_page_list)
 
     #抓取每个商圈中的房源列表页
@@ -100,8 +100,23 @@ class LianjiaSider(Spider):
                 house_page_list.append(house_page_url)
                 #print house_page_url
             for i in house_page_list:
-                print i
-                #yield scrapy.Request(i, callback=self.parse_house)
+                #print i
+                yield scrapy.Request(i, callback=self.parse_house)
+
+    def parse_house(self,response):
+        sel = Selector(response)
+        #获取房屋信息列表houst_list
+        house_list = sel.xpath('//ul[@id="house-lst"]/li')
+        #获取房源列表中的房源url
+        for house in house_list:
+            #self.count+=1
+            #house_id = house.xpath('.//@data-id').extract().encode('utf-8')
+            house_url = house.xpath('.//div[@class="pic-panel"]/a/@href').extract()[0]
+            yield scrapy.Request(house_url, callback=self.parse_house_info)
+            print self.count,house_url
+            #print house_url
+            #if self.count > 1:
+                #break
 
 
     '''
@@ -139,9 +154,9 @@ class LianjiaSider(Spider):
             #print next_page_url
             #time.sleep(1)
             yield scrapy.Request(next_page_url, callback=self.parse)
-
+    '''
     #解析房源信息
-    def sell_house_parse(self,response):
+    def parse_house_info(self,response):
         #创建LianjiaItem对象
         item = LianjiaItem()
         sel = Selector(response)
@@ -150,18 +165,20 @@ class LianjiaSider(Spider):
         #获取房产的标题
         item['title'] = title_line.xpath('.//h1[@class="title-box left"]/text()').extract()[0]
 
-        #根据第一条评论信息,获取房源的登记信息,
-        #//*[@id="commentsCon"]/div[1]/div[1]/p[1]/text()
-        pinglun = sel.xpath('//*[@id="firstData"]/text()').extract()[0]
-        # 解析成中文
-        pl_str = json.loads(json.dumps(pinglun).replace("\\\\","\\"))
-        #获取第一条评论的时间作为房源登记时间
-        reg = re.compile(r'\"lastModifyTime\"\:\"[0-9\-\:\ ]*\"')
-        doc=reg.findall(pl_str)
-        #print 'dengji',doc[0][18:29]
-        #print pl_str
-        #print dict(doc)['lastModifyTime']
-        item['dengjitime'] = doc[0][18:29]
+        #关于获取房源时间信息,
+        # #根据第一条评论信息,获取房源的登记信息,
+        # #//*[@id="commentsCon"]/div[1]/div[1]/p[1]/text()
+        # pinglun = sel.xpath('//*[@id="firstData"]/text()').extract()
+        # if len(pinglun)>0:
+        #     # 解析成中文
+        #     pl_str = json.loads(json.dumps(pinglun[0]).replace("\\\\","\\"))
+        #     #获取第一条评论的时间作为房源登记时间
+        #     reg = re.compile(r'\"lastModifyTime\"\:\"[0-9\-\:\ ]*\"')
+        #     doc=reg.findall(pl_str)
+        #     #print 'dengji',doc[0][18:29]
+        #     #print pl_str
+        #     #print dict(doc)['lastModifyTime']
+        #     item['dengjitime'] = doc[0][18:29]
 
         #房产的标签信息
         view_labels = sel.xpath('.//div[@class="view-label"]/span')
@@ -215,4 +232,3 @@ class LianjiaSider(Spider):
         yield item
 
         #print(title,tag_man,tag_ditie,tag_xuequ,tag_xg)
-        '''
