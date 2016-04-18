@@ -15,7 +15,7 @@ from pymongo import MongoClient
 class LianjiaPipeline(object):
 
     def __init__(self):
-        self.file = open('/Users/liben/PycharmProjects/Spiders/lianjia/lianjia_item.json','wb')
+#        self.file = open('/Users/liben/PycharmProjects/Spiders/lianjia/lianjia_item.json','wb')
         self.db_address = 'localhost'
         self.db_port = 27017
         self.db_name = 'lianjia'
